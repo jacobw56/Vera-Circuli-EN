@@ -1,0 +1,1904 @@
+\documentclass[11pt,letterpaper]{book}
+\usepackage{emptypage}
+\usepackage{pdflscape}
+% math stuffs
+\usepackage{mathtools}
+%\usepackage{wasysym}
+\usepackage{seqsplit}
+\usepackage{multirow}
+
+% fontenc for the accents and junk
+\usepackage[utf8]{luainputenc}
+\usepackage[T1]{fontenc}
+
+% Typeface
+%\usepackage[adobe-utopia]{mathdesign}
+%\usepackage{fourier}
+%\usepackage{fouriernc}
+%\usepackage{mathptmx}
+%\usepackage{tgtermes}
+%\usepackage{pxfonts}
+%\usepackage{newpxtext,newpxmath}
+%\usepackage[sc]{mathpazo}
+%\usepackage[oldstylenums]{kpfonts}
+\usepackage{kpfonts}
+%\usepackage{tgpagella}
+%\usepackage[garamond]{mathdesign}
+%\usepackage{garamondx}
+%\usepackage{ebgaramond}
+
+% Need Greek character support
+\usepackage{textgreek}
+
+% Umm
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{verbatimbox}
+\usepackage{caption}
+\usepackage{ftnxtra}
+\usepackage{longtable}
+\usepackage[rightmargin=0.0pt,indentfirst=false]{quoting}
+
+% Makes graphics easy
+\usepackage{graphicx}
+
+\usepackage{titling}
+
+% PDF is always pretty
+\DeclareGraphicsExtensions{.pdf}
+
+% Line spacing, 1.4 is pretty but YMMV
+\linespread{1.4}
+
+% Homespun macros 
+%\newcommand{\wlt}[1]{{\Large\;\textless\normalsize}#1{\Large\textgreater\;\normalsize}}
+%\newcommand{\wlc}[1]{{\large\;\{\normalsize}#1{\large\}\;\normalsize}}
+%\renewcommand{\arraystretch}{0.7}
+\newcommand{\Hair}{\ifmmode\mskip1mu\else\kern0.12em\fi}
+
+\begin{document}
+
+\frontmatter
+
+\setlength{\droptitle}{-96pt}
+
+\pretitle{\begin{flushleft}}
+\title{\Huge{\textsc{The True Squaring of the Circle and the Hyperbola}} \\
+\vskip 1.0em \Large{On its own kind of proportion, \\
+Discovered and proved.}}
+\posttitle{\par\end{flushleft}\vskip 4.5em}
+
+\preauthor{\begin{flushleft}}
+\author{\LARGE{James Gregory} \vskip 11.0em}
+\postauthor{\end{flushleft}}
+
+\predate{\begin{tabular}{p{140pt} p{100pt}} &\raggedleft}
+\date{1667 \\ Aberdeen, Scottland}
+\postdate{\end{tabular}}
+
+\maketitle
+
+\chapter*{\Huge\textnormal{\textsc{Welcome,}} \\ \textnormal{\textsc{Reader
+of Geometry}}}
+
+I was contemplating at length, dear Reader, whether analysis with its many
+operations, along with the general method of investigating all proportions of a
+quantity, are adequate, as Descartes first affirms in his Geometry. Indeed
+if it is so, it may be that it is possible to use it to demonstrate the
+oft-sung feat of squaring of the circle. Whenever I turn this over in my mind I
+readily see from the discoveries made so far on the properties of the circle
+that analysis may not suffice to establish such results. It occurred to me that
+I should only research the more general case after first considering the common
+circle. In doing so I hit upon the convergent sequence of polygons, the limit of
+which is the circular sector, and I saw here at once a trace of analysis. It
+followed that the convergent series applies naturally not only in the case of
+the circle, but likewise in more general consideration. And so from the
+properties of the circle followed the cases of ellipse and the hyperbola with no
+effort, and thus the infallible quadrature of every conic section was revealed
+to me. However the convergent series of polygons soon turned the tables on me,
+and I was forced to ply all of my arts to the insuperable difficulty of
+discovering its limit. But then I remembered that the spirit of analysis is the
+same as that of the common algebra, not only in resolving problems, but likewise
+in demonstrating their impossibility (when it be useful). After this first
+difficulty was put to rest, I also conquered the more general case, as I claim
+above. Indeed I uncovered the true squaring, by its own manner of proportion,
+not only of the circle (which I had set out to do at the beginning) but of all
+of the conic sections, and I revealed an entirely new type of proportion
+previously unknown in the sphere of Geometry. I can draw out this proportion as
+closely as needed in relation to the dimension of the conic section, and can
+easily demonstrate the very rapid extraction of roots of solid surds (unless I
+am very much mistaken). In fact, such approximations apply mathematically to
+every incommensurable proportion, such that we might better understand the
+nature of the proportion. I might speak of a proportion insofar as it is
+derived by some analytic operations (i.e. of the common arithmetic), and the
+proportion is then known to us in numbers or in the continuation of some
+discrete quantities, and I am not afraid to render these operations
+geometrically in the style of Decartes.
+
+First note that we always know how to relate commensurable quantities, or
+those having a common number between them. We cannot perceive incommensurable
+proportions unless they themselves are relatively commensurable, for the
+infinitude renders us ignorant, blunting our minds and impeding our simple
+notions. Two of the five arithmetic operations, addition and subtraction, are
+the most elementary. Multiplication is composed of addition, division from
+subtraction. Root extraction, which in general is nothing more than finding
+commensurable proportions, and which closely approaches an analytically
+incommensurable proportion, is composed from the aforementioned four. Our sixth
+operation, which in general is nothing more than finding commensurable
+proportions closely approximating a non-analytic proportion, is composed of the
+previous five. It will be noted that just as no fractional numbers are produced
+from integers by addition, subtraction or multiplication, but only by division,
+and just as no incommensurable numbers are produced from commensurables by
+addition subtraction, multiplication or division, but only by root extraction,
+so non-analytic quantities are not born from analytic numbers by addition,
+subtraction, multiplication, division, or root extraction, but rather from this
+sixth operation. As such this new operation of ours may be added to arithmetic
+and a new type of ratio may be added to geometry, which (as I demonstrate in
+this treatise) allows us to understand the analyticity of the ratio of the
+circle to the square of its diameter as a type of ratio we currently know how to
+exhibit, as root extraction allows us to understand the ratio between the side
+of the square and its diameter in terms of commensurability.
+
+It seems clear to me that the whole of the proof cannot be reduced to
+gemometric language, for in order to accomplish this we would use no small
+number of analytic magnitudes that are mutually related but generally
+incommensurable, which I am amazed have never been written about, as they open
+wide the plains of discovery.
+For from this demonstration is to be attacked, which by the power of the
+mesolabe cannot be accomplished by the straightedge and compass, likewise which
+not always and where the impaired equations can be reduced to purity, likewise
+which be necessary at minimum such general curve to mechanic resolution of the
+equation with so great innumerable, which from the existing geometry be
+impossible to be discerned from analysis, and from the undeveloped ones every
+day and in vain are sought.
+Euclid dedicated the entirety of his tenth book (except for a few minor general
+propositions) on incommensurables produced from theextraction of square roots.
+And I don't know how many by any other treatise is this material, although
+it be not only very useful to speculative geometry but is also an extremely
+remarkable theory in its own right.
+For example, in a geometric progression in which the first term is given by a
+commensurable length or by a power of such a quantity, and the second is any
+other whichever, be it binomial, trinomial, etc., it is impossible that the
+sequences progressing infinitely from these two terms will be mutually
+commensurable by a length or a power of such.
+Another much more to report, but perhaps i reserve this for a more favorable
+time, it is enough considering for the present this to have proved analytically.
+And if indeed analysis agreeing to such a violent degree does not compel and
+geometry, never repelling nore being repelled (by?) geometry, which analysis
+once proved geometric.
+From this invention I deduce some new angular sections and a doctrine of
+logarithms, some easy, most expeditious in practice and fortified by geometric
+demonstration.
+As far as the construction of the logarithm very long, the known conjecture is
+preferably seen, and division of the angle into more than five equal parts.
+Counting by prime numbers can be done only with great difficulty.
+I demonstrate all of these sums (which I can) quickly and clearly.
+And I am not careful in citations, in as much as foreign books to such work are
+destitute, and indeed I suppose you are not mediocrely versed in geometry,
+otherwise you will acquire no fruit by this.
+It remains as I may remind you the sum always to aspire to demonstration of
+generality, not only in this but also in other things produced by me.
+Thus as I admire R. P. Fracis Eschinard from the Society of Jesus in his optical
+dialog on page 26 to confirm to have proved to me in my promota optica, that
+image is seen in the same angle from the vertex of emersion as visible from the
+incident vertex, not only in elliptic and hyperbolic lenses, but also in all of
+my particular theory from which the whole of optical science is deduced, namely
+pages 26-27, 44-47, and 50.
+
+\ldots
+
+\mainmatter
+\begin{center}
+\Huge\textsc{Definitiones.}
+\end{center}
+\begin{enumerate}
+  \item Let two lines be drawn from the center of a circle, ellipse, or
+  hyperbola to its perimeter. We call the piece bound by those two lines and
+  the segment of the perimeter a sector.
+  
+  \item Let the segment of the perimeter between the two lines be subtended
+  any number of times, forming rectilinear triangles (where the common vertex
+  is the center of the conic section and the bases are the subtending lines).
+  Then if the conic section is a circle or ellipse we call the figure created
+  by combining these triangles a regular inscribed triangle, if it is a
+  hyperbola then we call the figure a regular circumscribed polygon.
+  
+  \item Let the segment of the perimeter between the lines be made tangent to
+  lines any number of times and let lines be drawn from the tangents to the
+  center of the conic section, and further require that each of the
+  quadrilaterals, understood as being composed from successive tangent lines
+  and the lines to the center, be equal. If the conic section is a circle or an
+  ellipse, then I call the figure created by the combination of these a regular
+  circumscribed polygon. If it is a hyperbola then I call it a regular
+  inscribed polygon.
+  
+  \item Let all of the vertices of the subtending angles (except those to the
+  center of the conic section) of the regular polygon tough all of the points
+  of contact of the regular polygon with the tangents. I call this a complex
+  polygon.
+  
+  \item We say a magnitude is composed of magnitudes, when one magnitude
+  makes other magnitudes by addition, subtraction, multiplication, division,
+  root extraction, or any other operation imaginable.
+  
+  \item When a magnitude is composed of magnitudes by addition, subtraction,
+  multiplication, division, or root extraction, we say it is composed
+  analytically.
+  
+  \item When magnitudes can be composed analytically of magnitudes which are
+  mutually commensurable, we say they are mutually analytic.
+  
+  \item Let the magnitude $X$ be composed of some magnitudes $A$, $B$, $C$, $D$,
+  and $E$, and the magnitude $Z$ be composed of magnitudes $F$, $G$, $C$, $D$,
+  and $E$ by the same method and operations as $X$ only with the magnitudes $F$
+  and $G$ in place of $A$ and $B$. If this is so, then we say that the magnitude
+  $X$ is composed of $A$ and $B$ by the same method as $Z$ is composed of $F$
+  and $G$.
+  
+  \item Let there be two magnitudes $A$ and $B$ of which are composed two other
+  magnitudes $C$ and $D$, whose the difference is less than that of $A$ and $B$.
+  Also let $E$ be composed from $C$ and $D$ by the same method as $C$ is
+  composed of $A$ and $B$, and $F$ be composed from $C$ and $D$ by the same
+  method as $D$ is composed of $A$ and $B$. And further still let $G$ be
+  composed from $E$ and $F$ by the same method as $E$ is composed of $C$ and $D$
+  and $C$ is composed by $A$ and $B$, and let $H$ be composed from $E$ and $F$
+  by the same method as $F$ is composed of $C$ and $D$ and $C$ is composed by
+  $A$ and $B$. Continue thus. I call this a convergent series.
+  
+  \item Terms being placed next to each other as $A$ and $B$, or $C$ and $D$,
+  or $E$ and $F$, or $G$ and $H$, are called convergent terms.
+\end{enumerate}
+
+\begin{center}
+\Large\textsc{Petitions.}
+\end{center}
+\begin{enumerate}
+  \item We desire that magnitudes composed of given mutually analytic
+  magnitudes be mutually analytic themselves as well as analytic with the given
+  magnitudes.
+  
+  \item Likewise we desire that magnitudes that cannot be analytically
+  composed from given mutually analytic magnitudes not be analytic with the
+  given magnitudes.
+\end{enumerate}
+The preceding desires may perhaps be seen by some as obscure, but will be made
+clear by an analysis of the elements.
+
+\cleardoublepage
+\begin{center}
+\Huge\textsc{The True Squaring of the Circle and the Hyperbola.}
+\end{center}
+
+\vskip 2.0em
+Let $BIP$ be a segment of a circle, ellipse, or hyperbola with center $A$. The
+triangle $ABP$ may be completed, and from the points $B$ and $P$ on the segment
+tangents $BF$ and $PF$ may be drawn, which will meet each other at the point
+$F$. The line $AF$ is thus produced, which intersects the segment at point $I$
+and the line $BP$ at the point $Q$. From this the lines $BI$ and $PI$ are
+joined.
+
+\begin{figure}[h]
+\includegraphics[scale=0.95]{vera_i}
+\end{figure}
+
+\newpage
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition I. Theorem.}
+
+\vskip 1.0em
+\emph{The quadrilateral $BAPI$ is half of the quadrilateral $BAPF$ plus the
+triangle $BAP$.}
+\end{center}
+\end{samepage}
+
+The line $AQ$ is drawn through $F$ meeting with the the two lines $FB$ and $FP$,
+which are tangent to the segment at the points $B$ and $P$. Therefore the line
+$AQ$ contacts the line $BP$ at its bisector $Q$. We see from this that the triangle
+$AQB$ is equal to the triangle $AQP$, the triangle $FBQ$ equals triangle
+$FQP$, and the triangle $ABF$ equals triangle $APF$. Therefore the triangle
+$ABF$ is half of the quadrilateral $ABFP$. Similarly the triangle $ABI$ is half
+of the quadrilateral $ABIP$ and the triangle $ABQ$ is half of triangle $ABP$.
+$ABF$, $ABI$, and $ABQ$ each have the same altitude and share one base, but the
+other bases $AF$, $AI$, and $AQ$ progress arithmetically. Therefore the two
+quadrilaterals $ABFP$ and $ABIP$ and the triangle $ABP$ are clearly in
+arithmetic progression with a ratio of $AF$ to $AI$, Q.E.D.
+
+\vskip 1.0em
+Let the line $DL$ be drawn tangent to the segment at the point $I$ so that it
+will meet the lines $BF$ and $PF$ at the points $D$ and $L$, completing the
+polygon $ABDLP$.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition II. Theorem.}
+
+\vskip 1.0em
+\emph{The quadrilateral $ABFP$ plus quadrilateral $ABIP$ is to the double of
+quadrilateral $ABIP$ as quadrilateral $ABFP$ is to polygon $ABDLP$.}
+\end{center}
+\end{samepage}
+
+The line $AF$ is drawn through the point of tangency of the line $DL$ with the
+segment, and is likewise drawn through the meeting point of the two lines $FB$
+and $FP$, which terminate the line $DL$ and touch the segment in two points.
+Therefore the line $DL$ is bisected at the point $I$. Because of this the
+triangle $FDI$ equals the triangle $FIL$ and the triangle $ABF$ equals the
+triangle $APF$. Thus the quadrilateral $ABDI$ equals quadrilateral $APLI$, and
+further quadrilateral $APLI$ is half of the polygon $ABDLP$. It is obvious from
+the above demonstration that the triangle $AIL$ equals triangle $ALP$, but
+triangle $ALF$ is to triangle $ALI$ as $FA$ is to $AI$ and $FA$ is to $AI$ as
+quadrilateral $ABPF$ is to quadrilateral $ABIP$. Thus quadrilateral $ABFP$ is to
+quadrilateral $ABIP$ as triangle $ALF$ is to triangle $AIL$. So putting it
+together, quadrilateral $ABFP$ plus $ABIP$ is to quadrilateral $ABIP$ as
+triangle $AFL$ plus triangle $AIL$, i.e. triangle $AFP$, is to triangle $AIL$.
+Doubling this result, $ABFP$ plus $ABIP$ is to the double of $ABIP$ as triangle
+$AFP$ is to quadrilateral $AILP$. Note that triangle $AFP$ is half of
+quadrilateral $ABFP$ and quadrilateral $AILP$ is half of polygon $ABDLP$.
+Therefore quadrilateral $ABFP$ plus quadrilateral $ABIP$ is to the double of
+$ABIP$ as quadrilateral $ABFP$ is to polygon $ABDLP$, Q.E.D.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition III. Theorem.}
+
+\vskip 1.0em
+\emph{The triangle $BAP$ plus the quadrilateral $ABIP$ is to the quadrilateral
+$ABIP$ as the double of the quadrilateral $ABIP$ is to the polygon $ABDLP$.}
+\end{center}
+\end{samepage}
+
+In the preceding proposition it is shown that the sum of $ABFP$ and $ABIP$ is to
+the double of quadrilateral $ABIP$ as quadrilateral $ABFP$ is to polygon
+$ABDLP$. By permuting we see that quadrilateral $ABFP$ plus $ABIP$ is to
+quadrilateral $ABFP$ as the double of quadrilateral $ABIP$ is to polygon
+$ABDLP$. Since quadrilaterals $ABFP$ and $ABIP$ and triangle $ABP$ are in
+arithmetic progression, we have that quadrilateral $ABIP$ is to quadrilateral
+$ABFP$ as triangle $ABP$ is to quadrilateral $ABIP$. Putting these together,
+quadrilateral $ABIP$ plus $ABFP$ is to quadrilateral $ABFP$ as triangle $ABP$
+plus quadrilateral $ABIP$ is to quadrilateral $ABIP$. On the other hand $ABIP$
+plus $ABFP$ is to quadrilateral $ABFP$ as the double of quadrilateral $ABIP$ is
+to polygon $ABDLP$. And therefore triangle $ABP$ plus quadrilateral $ABIP$ is
+to quadrilateral $ABIP$ as the double of quadrilateral $ABIP$ is to polygon
+$ABDLP$, Q.E.D.
+
+\vskip 1.0em
+Let the lines $AD$ and $AL$ be drawn to meet the segment at the points $E$
+and $O$ and intersecting the lines $BI$ and $IP$ at $H$ and $M$. From this are
+joined the lines $BE$, $EI$, $IO$, and $OP$ to complete the polygon $ABEIOP$.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition IV. Theorem.}
+
+\vskip 1.0em
+\emph{The polygon $ABEIOP$ is half of $ABDLP$ plus the quadrilateral $ABIP$.}
+\end{center}
+\end{samepage}
+
+From the previous theorem it is obvious that the quadrilateral $AILP$,
+quadrilateral $AIOP$, and triangle $AIP$ are in arithmetic progression, and from
+the previous proposition one can gather easily enough that the quadrilateral
+$AILP$ is half of polygon $ABDLP$, quadrilateral $AIOP$ is half of polygon
+$ABEIOP$, and triangle $AIP$ is half of quadrilateral $ABIP$. Thus by doubling
+the terms, polygon $ABDLP$, polygon $ABEIOP$, and quadrilateral $ABIP$ are in
+arithmetic progression, Q.E.D.
+
+\vskip 1.0em
+Let lines $CG$ and $KN$ be drawn tangent to the segment at the points $E$ and
+$O$ and let the lines $DL$, $DB$, and $LP$ intersect at the points $C$, $G$,
+$K$, and $N$ to complete the polygon $ABCGKNP$.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition V. Theorem.}
+
+\vskip 1.0em
+\emph{The quadrilateral $ABIP$ plus the polygon $ABEIOP$ are to the polygon
+$ABEIOP$ as the double of the polygon $ABEIOP$ is to the polygon $ABCGKNP$.}
+\end{center}
+\end{samepage}
+
+From the third theorem it is obvious that the triangle $ABI$ plus the
+quadrilateral $ABEI$ is to the quadrilateral $ABEI$ as the double of
+quadrilateral $ABEI$ is to polygon $ABCGI$. From the previous proposition it is
+easily concluded that triangle $ABI$ is half of quadrilateral $ABIP$,
+quadrilateral $ABEI$ is half of polygon $ABEIOP$, and polygon $ABCGI$ is half of
+polygon $ABCGKNP$. Therefore by doubling the terms, quadrilateral $ABIP$ plus
+$ABEIOP$ is to polygon $ABEIOP$ as the double of polygon $ABEIOP$ is to polygon
+$ABCGKNP$, Q.E.D.
+
+\vskip 1.0em
+From this one can easily see that the polygon $ABCGKNP$ is the harmonic mean
+between polygons $ABEIOP$ and $ABDLP$, which is sufficient to suggest that this
+may be demonstrated perpetually.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+\end{samepage}
+
+The two preceding propositions can be proved by the same method for whichever
+complex polygons in place of the complex polygons $ABIP$ and $ABDLP$. Indeed the
+tangent polygon contains as many equal quadrilaterals as the subtending polygon
+contains triangles. And so it is evident that these ratios of the polygons
+continue themselves to infinity, drawing lines $AN$, $AK$, $AG$, and $AC$
+through points $R$, $T$, $S$, and $V$ and composing other lines and polygons
+inside and outside of these. Note that we may say of these inscribed and
+circumscribed polygons that they double by inscription and circumscription.
+
+From the previous propositions it is obvious (if we let triangle $ABP = a$ and
+quadrilateral $ABFP = b$) that quadrilateral $ABIP = \sqrt{ab}$ and polygon
+$ABDLP = \frac{2ab}{a+\sqrt{ab}}$. By the same method, let quadrilateral $ABIP =
+c$ and polygon $ABDLP = d$ and we have that polygon $ABEIOP = \sqrt{cd}$ and
+polygon $ABCGKNP = \frac{2cd}{c+\sqrt{cd}}$, and it is evindent from this that
+the series of polygons converges.
+
+And so, continuing this to infinity, it is obvious that in the end we have shown
+that the magnitude of the sector of the circle, the ellipse, or the hyperbola
+equals $ABEIOP$. Indeed the difference of the complex polygons in the series
+always diminishes, so that all of the magnitudes may be made smaller, and so in
+the following theorems we shall demonstrate the Scholium.
+
+Therefore if the aforementioned series of polygons terminates, that is,
+if one may find a final inscribed polygon (if we may call it that) equal to the
+final circumscribed polygon, one would infallibly have the quadrature of the
+circle and the hyperbola. But since it has proved difficult, and in geometry it
+is perhaps altogether impossible for such a series to terminate, certain
+propositions are permitted from which to find this kind of limit of the series.
+And eventually (if it is possible) the general method for finding all of the
+limits of convergent series.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition VI. Theorem.}
+
+\vskip 1.0em
+\emph{The difference between the triangle $ABP$ and the quadrilateral $ABPF$
+is greater than twice the difference between the quadrilateral $ABIP$ and the
+polygon $ABDLP$.}
+\end{center}
+\end{samepage}
+
+Denote the triangle $ABP$ by $A$, quadrilateral $ABFP$ by $B$, quadrilateral $ABIP$ by
+$C$, and polygon $ABDLP$ by $D$. Since $A$ is to $C$ as $C$ is to $B$, the
+difference between $A$ and $C$ is to $A$ as the difference between $C$ and $B$
+is to $B$. Permuting, the difference between $A$ and $C$ is to the difference
+between $C$ and $B$ as $A$ is to $C$. Now putting these together, the difference
+between $A$ and $C$ plus the difference between $C$ and $B$, that is, the
+difference between $A$ and $B$ is to the difference between $C$ and $B$ as $A+C$
+is to $C$. But $A+C$ is to $C$ as $2C$ is to $D$ and the difference between $A$
+and $B$ is to the difference between $C$ and $B$ as $2C$ is to $D$. Since $A+C$
+is to $C$ as $2C$ is to $D$, permuting gives $A+C$ is to $2C$ as $C$ is to $D$.
+Dividing, the difference between $A$ and $C$ is to $2C$ as the difference
+between $C$ and $D$ is to $D$. Again permuting, the difference between $A$ and
+$C$ is to the difference between $C$ and $D$ as $2C$ is to $D$. But now the
+difference between $A$ and $B$ has been demonstrated to be to the difference
+between $C$ and $B$ as $2C$ is to $D$, and from this the difference between $A$
+and $B$ is to the difference between $C$ and $B$ as the difference between $A$
+and $C$ is to the difference between $C$ and $D$. However the difference between
+$A$ and $B$ is greater than the difference between $C$ and $B$ and the
+difference between $A$ and $C$ is greater than the difference between $C$ and
+$D$. Permuting the previous ratio, the difference between $A$ and $B$ is to the
+difference between $A$ and $C$ as the difference between $C$ and $B$ is to the
+difference between $C$ and $D$. The difference between $A$ and $B$ is greater
+than the difference between $A$ and $C$ and the difference between $C$ and $B$
+is greater than the difference between $C$ and $D$, and the difference between
+$A$ and $B$ is equal to the difference between $A$ and $C$ plus the difference
+between $C$ and $B$. Therefore either of them is greater than the difference
+between $C$ and $D$ and it is obvious that the difference between $A$ and $B$ is
+greater than the double of the difference between $C$ and $D$, that is, the
+difference between the triangle $ABP$ and the quadrilateral $ABFP$ is greater than twice
+the difference between the quadrilateral $ABIP$ and the polygon $ABDLP$, Q.E.D.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+
+The same method may by all means be used to demonstrate that the difference
+between quadrilateral $ABIP$ and polygon $ABDLP$ is greater that twice the
+difference between polygons $ABEIOP$ and $ABCGKNP$. From here by the same method
+one is able to demonstrate this difference is always exceeded in our doubling to
+infinity of the complex polygon. In fact the difference between the prior
+inscribed and circumscribed polygons is always greater than twice the difference
+between the subsequent inscribed and circumscribed polygons. Thus it
+bears more than half of the difference of the prior polygons to that of the
+difference of the subsequent. Therefore continuing the subdoubling of the
+polygon, we discover the two complex polygons, where the difference is made less
+than whatever magnitude, as we assumed in the preceding Scholium.
+\end{samepage}
+
+Let there be two magnitudes, $a$ and $b$, with $a$ less than $b$, and let there
+be two inequalities $c$ is greater than $d$ and $c$ is greater than $e$. From
+here he have that $c$ is to $d$ as $b - a$ is to $\frac{bd - ad}{c}$ to which
+$a$ is then added to the magnitude so that $\frac{ca + bd - ad}{c}$, where one
+immediately assigns the magnitude as $a$. And also $c$ is to $e$ as $b - a$ is
+to $\frac{be - ae}{c}$, where the magnitude is subtracted from $b$ yielding
+$\frac{bc - be + ae}{c}$ which is then assigned to $b$.
+
+One may continue the convergent series from here in which the first terms are
+$a, b$, the second $\frac{ca+bd-ad}{c}, \frac{bc-be+ae}{c}$, and it is obvious
+that the term $\frac{ca+bd-ad}{c}$ is greater than the term $a$ since the term
+$a$ is added to $\frac{bd-ad}{c}$ giving $\frac{ca+bd-ad}{c}$. It is also clear
+that the term $\frac{ca+bd-ad}{c}$ is less than the term $b$ since the
+difference between $a$ and $b$ is greater than the difference between $a$ and
+$\frac{ca+bd-ad}{c}$. It is evident that the term $\frac{bc-be+ae}{c}$ is less
+that the term $b$ since $\frac{be-ae}{c}$ is subtracted from $b$ giving
+$\frac{bc-be+ae}{c}$. And it is further obvious that the term
+$\frac{bc-be+ae}{c}$ is greater than $a$ since the difference between $a$ and
+$b$ is greater than the difference between $\frac{bc-be+ae}{c}$ and $b$.
+Therefore it is evident that the difference between the convergent terms $a$ and
+$b$ is greater than the difference between the convergent terms
+$\frac{ca+bd-ad}{c}$ and $\frac{bc-be+ae}{c}$.
+
+However since the convergent terms $a$ and $b$ where given as indefinite, $a$
+and $b$ can be selected to be in the location of whichever of the convergent
+terms of the whole of the series. So by putting $a$ and $b$ for whichever terms
+of the convergent series, it necessarily follows from the composition of the
+series that $\frac{ca+bd-ad}{c}$ and $\frac{bc-be+ae}{c}$ are the immediately
+following convergent terms. And again since the difference between the terms $a$
+and $b$ is greater than the difference between the terms $\frac{ca+bd-ad}{c}$
+and $\frac{bc-be+ae}{c}$, it is clear that the difference between the
+prior convergent term is always greater than the difference between the
+subsequent convergent term. Because this difference always diminishes
+proportionally in the ratio $b - a$ is to $\frac{bc - be + ae - ca - bd +
+ad}{c}$, one can see that the terms of this convergent series are progressively
+less. Therefore imagining this series continuing to infinity, we are able to
+imagine the final convergent terms being equal, where we call these equal terms
+the limit of the series.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition VII. Problem.}
+
+\vskip 1.0em
+\emph{To find the limit of the aforementioned series.}
+\end{center}
+\end{samepage}
+
+So that this set of problems may be satisfied, we want to first find the
+magnitude that is composed by the same method from the convergent terms $a$ and
+$b$ as from the convergent terms $\frac{ca+bd-ad}{c}$ and $\frac{bc-be+ae}{c}$,
+which follows easily from the following method. The magnitude may be obtained by
+multiplication by $a$ and addition by $b$ times a magnitude $m$, and the same may
+be obtained by multiplication by $\frac{ca+bd-ad}{c}$ and addition by
+$\frac{bc-be+ae}{c}$ times a magnitude $m$. Let the magnitude be $z$, then $za+bm$
+is equal to $\frac{zca + zbd - zad + mbc - mbe + mae}{c}$ and the equation
+reduces to $z = \frac{mae - mbe}{ad - bd}$. This magnitude whether multiplied by
+$a$ and added to $mb$, or multiplied by $\frac{ca+bd-ad}{c}$ and added to
+$\frac{mbc-mbe+mae}{c}$ produces the same magnitude in either case, namely
+$\frac{maae - mbae + mbad - mbbd}{ad - bd}$. And so the aforementioned
+magnitude is composed by the same method from the convergent terms $a$ and $b$
+as from the convergent terms $\frac{ca+bd-ad}{c}$ and $\frac{bc-be+ae}{c}$, and
+because $a$ and $b$ are indefinite magnitudes they can be any convergent terms
+whatsoever of the series, where the convergent terms immediately following are
+$\frac{ca+bd-ad}{c}$ and $\frac{bc-be+ae}{c}$. Thus the magnitude $\frac{maae -
+mbae + mbad - mbbd}{cd - bd}$ is composed by the same method from any of the
+convergent terms of the series what are composed of the convergent terms $a$ and
+$b$. Therefore the aforementioned magnitude is composed by the same method from
+its final convergent terms, which are equal. Let this final term be $x$, which
+multiplied by $\frac{mae - mbe}{ad - bd}$ and by $m$ produces $xm$ and
+$\frac{xmae - xmbe}{ad - bd}$. Summing the factors yields $\frac{xmae - xmbe
++ xmad - xmbd}{ad - bd}$ is equal to $\frac{maae - mbae + mbad - mbbd}{ad -
+bd}$, and the equation reduces to $x$ is equal to the term $\frac{aae - bae +
+bad - bbd}{ae - be + ad - bd}$, which we wanted to find.
+
+In order to make this problem less obscure by an exercise, we illustrate in
+numbers: Let $c = 7$, $d = 2$, $e = 3$, $a = 28$, and $b = 42$. Then the second
+convergent terms are $32$ and $36$, the third are $33\frac{1}{7}$ and
+$34\frac{2}{7}$, and the limit is $33\frac{3}{5}$.
+
+Changing nothing, if $a$ is less than $b$ then $\frac{ca+bd-ad}{c}$ may be
+greater than $\frac{bc-be+ae}{c}$, indeed greater can be subtracted analytically
+by lesser, which will not bear showing in the example. Let $c = 7$, $d
+= 5$, $e = 4$, $a = 28$, and $b = 42$. The second convergent terms will be $38$
+and $34$, the third $35\frac{1}{7}$ and $36\frac{2}{7}$, and the limit
+$35\frac{7}{9}$.
+
+The solution to this problem may even be obtained by this same method is $a$ is
+zero, or exactly nothing. For example, let $c = 8$, $d = 3$, $e = 4$, $a = 0$,
+and $b = 24$. Then the second convergent terms will be $9$ and $12$, the third
+$10\frac{1}{8}$ and $10\frac{1}{2}$, and the limit of the series
+$10\frac{2}{7}$.
+
+Indeed the limits of these series can be found in Gregorie of St. Vincent's book
+on geometric progression, although his way of proceeding differs greatly from
+the one presented here.
+
+\newpage
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition VIII. Problem.}
+
+\vskip 1.0em
+\emph{Let the two quantities $A$ and $B$ be given and $C:D$ be any given
+ratio. We want to find another magnitude so that the ratio of it to $A$ is
+the multiplicate of $B:A$ in the ratio $C:D$.}\footnote{If a ratio $x$ is the
+``multiplicate'' of the ratio $y$ in the ratio $z$, then in modern notation $x =
+y^{z}$. Likewise, if a number $x$ is the ``submultiplicate'' of the ratio $y$ in
+the ratio $z$, then in modern notation $x = y^{\frac{1}{z}}$. See
+\cite[p.286]{Hutton}.}
+\end{center}
+\end{samepage}
+
+First, let the ratio $C:D$ be commensurable, and let $E$ be a common measure of
+$C$ and $D$. For as often as $E$ is contained in $D$ let the ratio $F:A$ be the
+submultiplicate of $B:A$ in such ratio\footnote{That is, $\frac{F}{A} =
+\left(\frac{B}{A}\right)^{\frac{E}{D}}$}. Also as often as $E$ is contained in
+$C$ let the ratio $G:A$ be the multiplicate of the ratio $F:A$ in such
+ratio\footnote{That is, $\frac{G}{A} = \left(\frac{B}{A}\right)^{\frac{C}{E}}$}.
+I claim that $G$ is the desired magnitude. The ratio $G:A$ is the multiplicate
+of the ratio $F:A$ in the ratio $C:E$, and the ratio $F:A$ is the multiplicate
+of the ratio $B:A$ in the ratio $E:D$. Therefore by equality, the ratio $G:A$ is
+the multiplicate of the ratio $B:A$ in the ratio $C:D$, which is what we wanted
+to show.
+
+If the ratio $C:D$ is incommensurable, then I am convinced that in practice this
+problem is geometrically impossible. However it can be accomplished by
+approximation, assuming a commensurable ratio that approaches it.
+
+Let there be a convergent series such that the first terms are $A$ and $B$, the
+second $C$ and $D$, and the third $E$ and $F$. Let the second terms be made
+by the first, where $B$ is greater than $A$, as the multiplicate of the ratio
+$C:A$ in the ratio of $M:N$, with $M\geq N$, and the ratio of $B:A$ is the
+multiplicate of the ratio $D:A$ in the ratio $M:O$, with $M\geq O$. Further, the
+third terms are made from the second as the second are made from the first, and
+so the series continues.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition IX. Problem.}
+
+\vskip 1.0em
+\emph{To find the limit of the aforementioned series.}
+\end{center}
+\end{samepage}
+
+Set $G=0$, that is the exponent of the ratio of equality, or of the ratio $A:A$.
+Also let $H$ satisfy the exponent of the ratio $B:A$. Let $M:N$ be as the
+difference between $G$ and $H$, that is $H$ itself, or the exponent of the ratio
+$B:A$, is to the excess of $I$ over $G$, that is $I$ itself, but
+$M:N$ is the ratio by which $B:A$ is the multiplicate of the ratio $C:A$. Therefore
+the excess of $I$ over $G$, that is $I$ itself, is the exponent of
+the ratio $C:A$. Let $M:O$ be as the excess of $H$ over $G$, that is
+$H$, is to the excess of $K$ over $G$, that is $K$, but $M:O$ is the
+ratio by which $B:A$ is the multiplicate of the ratio $D:A$. Whenever $H$ is the
+exponent of the ratio $B:A$, $K$ will be the exponent of the ratio $D:A$.
+Therefore if $I$ is the exponent of the ratio $C:A$ and $K$ is the exponent of
+the ratio $D:A$, then the excess of $K$ over $I$ will be the exponent
+of the ratio $D:C$. From here let $M:N$ be as the excess of $K$ over
+$I$, or the exponent of the ratio $D:C$, is to the excess of $R$ over
+$I$, but $M:N$ is the ratio, from the composition of the series, by which $D:C$
+is the multiplicate of $E:C$, and so the excess of $K$ over $I$ is the
+exponent of the ratio $D:C$. Thus the excess of $R$ over $I$ is the
+exponent of the ratio $E:C$ and $I$ is the exponent of the ratio $C:A$.
+Therefore $R$ is the exponent of the ratio $E:A$. From here let $M:O$ as the
+excess of $K$ over $I$ is to the excess of $S$ over $I$,
+but $M:O$ is the ratio, from the composition of the series, by which $D:C$ is 
+the multiplicate of $F:C$, where the excess of $K$ over $I$ is the
+exponent of the ratio $D:C$. The excess of $S$ over $I$ will be the
+exponent of the ratio $F:C$ and $I$ is the exponent of the ratio $C:A$. Thus $S$
+is the exponent of the ratio $F:A$. Therefore when $R$ is the exponent of $E:A$
+and $S$ is the exponent of the ratio $F:A$, the excess of $S$ over
+$R$ will be the exponent of the ratio $F:E$. Continuing whichever series, it may
+be demonstrated as before that $T$ be the exponent of $X:A$ and $V$ the exponent
+of the ratio $Y:A$. Finally it will always be shown that the convergent terms of
+the series of exponents are exponents of the ratios, and specifically of the
+convergent terms of the proposed series by the first magnitude, $A$ of the
+series, of whichever convergent terms of the series may be found in the same way
+by the initial values. Thus by the term of the series of exponents through this
+7 found. For example, let $L$, it will be the exponent of the ratio, be the
+limit of the proposed series with the first term $A$. Therefore $Z:A$ may be
+found that is the multiplicate of the given $B:A$ in the ratio $L:H$, and $Z$
+will be the desired limit, which we wanted to find.
+
+To illustrate this problem in numbers, let $M = 4$, $N = 2$, $O = 1$, $A = 6$,
+and $B = 10$. Then the second convergent terms shall be $\sqrt{60}$ and
+$\left(2160\right)^{\frac{1}{4}}$, the third convergent terms
+$\left(7776000\right)^{\frac{1}{8}}$ and
+$\left(100776960000000\right)^{\frac{1}{16}}$, and the limit of the series
+$\left(360\right)^{\frac{1}{3}}$.
+
+As another example, let $M = 6$, $N = 2$, $O = 3$, $A = 5$, and $B = 10$. Then
+the second convergent terms of the series shall be
+$\left(250\right)^{\frac{1}{3}}$ and $\sqrt{50}$, the third
+$\left(488281250000000\right)^{\frac{1}{18}}$ and
+$\left(7812500000\right)^{\frac{1}{12}}$, and the limit of the series
+$\left(12500\right)^{\frac{1}{5}}$. Thus far all of the limits of the convergent
+series can be made either by a single arithmetic proportion or a single
+geometric proportion. Now I shall add to the method, and by the power of this
+the limits of all convergent series may be found.
+
+\newpage
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition X. Problem.}
+
+\vskip 1.0em
+\emph{To find the limit of a given series from a given magnitude composed by 
+the same method from two convergent terms of any convergent series in the same
+way as from the subsequent convergent terms of the same series.}
+\end{center}
+\end{samepage}
+
+Let the convergent series be of any two convergent terms $a$ and $b$ and the the
+subsequent convergent terms $\sqrt{ab}$ and $\frac{aa}{\sqrt{ab}}$. The sum
+of the convergent terms $a+b$ multiplied by the first convergent term $a$ gives
+$aa+ab$. The sum of the subsequent convergent terms
+$\sqrt{ab}+\frac{a^{2}}{\sqrt{ab}}$ multiplied by the first convergent term
+$\sqrt{ab}$ likewise gives $aa+ab$. From this is discovered the limit of
+the convergent series. It is clear that the magnitude $aa+ab$ is made by
+the same method from the convergent terms $a$ and $b$ as from the subsequent
+convergent terms $\sqrt{ab}$ and $\frac{aa}{\sqrt{ab}}$, and because the
+magnitudes $a$ and $b$ were arbitrarily chosen terms of the convergent series,
+it is evident that the sum of any proposed convergent terms of the series
+multiplied by the first convergent term will give that same magnitude, which is
+likewise the sum of the subsequent convergent terms multiplied by the first
+convergent term. Since two convergent terms are always followed by two
+convergent terms, it is clear that the sum of any two of the convergent
+terms multiplied by the first convergent term will be $aa+ab$. And so the
+final convergent terms are equal. Therefore let the final term of this series be
+the limit $z$, which is added to itself and the sum multiplied by itself to give
+$2zz$, which equals the magnitude $aa+ab$, and solving this equation
+for $z$ yields the limit of the series $\sqrt{\frac{aa+b^{2}}{2}}$, which we
+wanted to find.
+
+And therefore in order to find the limit of any convergent series it is
+necessary only to discover a magnitude composed by the same method from the
+first convergent terms as is likewise composed from the second convergent
+terms.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Conclusions.}
+\end{center}
+
+Since it is not important to the problem whether the convergent terms $a$ and
+$b$ are the first, second, third, etc., it is clear that all of the convergent
+terms of the series are composed by the same method from the first convergent
+terms as by the second, third, fourth, etc. convergent terms.
+\end{samepage}
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XI. Theorem.}
+
+\vskip 1.0em
+\emph{The sector of the circle, ellipse, or hyperbola $ABIP$ is not composed
+analytically by the triangle $ABP$ and the quadrilateral $ABFP$.}
+\end{center}
+\end{samepage}
+
+Let the triangle $ABP = a$ and the quadrilateral $ABFP = b$. It is clear from the
+preceding propositions that the quadrilateral $ABIP = \sqrt{ab}$ and the polygon $ABDLP
+= \frac{2ab}{a+\sqrt{ab}}$. The sector $ABIP$ is the limit of this convergent
+series. So that the signs of radicals and fractions may be removed from the
+terms of the series, for the first convergent terms of the series $a$ and $b$,
+that is, for the triangle $ABP$ and the quadrilateral $ABFP$, put $a^{3}+a^{2}b$
+and $a^{2}b+b^{3}$. Then the second convergent terms of the series, that is, the
+quadrilateral $ABIP$ and the polygon $ABDLP$, will be $ba^{2}+b^{2}a$ and $2b^{2}a$. I
+claim that the limit of the convergent series (where the first convergent terms
+of the series are $a^{3}+a^{2}b$ and $a^{2}b+b^{3}$ and the second are
+$ba^{2}+b^{2}a$ and $2b^{2}a$) is not composed analytically of the terms
+$a^{3}+a^{2}b$ and $a^{2}b+b^{3}$. Indeed, if the aforementioned limit is
+composed analytically of the terms $a^{3}+a^{2}b$ and $a^{2}b+b^{3}$, then the
+limit would itself be analytic and would be composed by the same method from
+the convergent terms $ba^{2}+b^{2}a$ and $2b^{2}a$. Therefore the limit would
+be composed analytically by the same method from $a^{3}+a^{2}b$ and
+$a^{2}b+b^{3}$ as it is composed from $ba^{2}+b^{2}a$ and $2b^{2}a$, but no
+magnitude may be composed analytically by the same method from $a^{3}+a^{2}b$
+and $a^{2}b+b^{3}$ as it is composed from $ba^{2}+b^{2}a$ and $2b^{2}a$, which
+I thus demonstrate. If a magnitude may be composed analytically by the same
+method from $a^{3}+a^{2}b$ and $a^{2}b+b^{3}$ as it is composed from
+$ba^{2}+b^{2}a$ and $2b^{2}a$, then the same magnitude would be made by adding,
+subtracting, multiplying, dividing, and extracting roots from the terms
+$a^{3}+a^{2}b$ and $a^{2}b+b^{3}$ as if by the same method the terms
+$ba^{2}+b^{2}a$ and $2b^{2}a$ were added, subtracted, multiplied, divided, and
+roots extracted. However the latter is not possible to do, so neither can be
+the former. Thus I prove less***, if the same magnitude is made by addition,
+subtraction, multiplication, division, and root extraction of the terms
+$a^{3}+a^{2}b$ and $a^{2}b+b^{3}$, which themselves are made by addition,
+subtraction, multiplication, division, and root extraction of the terms
+$ba^{2}+b^{2}a$ and $2b^{2}a$, then by adding, or subtracting, or multiplying,
+or dividing equal magnitudes by or to the terms $a^{3}+a^{2}b$ and
+$a^{2}b+b^{3}$, or by root extraction, these analytic operations turning into
+others, by reiterating any of them or doing none of them, the two terms can be
+made into the final product, one from the term $a^{2}b+b^{3}$ and the other from
+the term $2b^{2}a$, so that the final product from the term $a^{3}+a^{2}b$ with
+the final product from $a^{2}b+b^{3}$ is the same as the final product by the
+term $ba^{2}+b^{2}a$ with the final product from the term $2b^{2}a$ in the same
+way added, subtracted, multiplied, divided, and roots extracted.
+
+\noindent\ldots Yikes! \ldots
+
+\noindent And therefore these two magnitudes cannot be equal, where the other may be
+obtained by $a$ itself in one as in the other. And so it is evident that a
+sector of a circle, ellipse, or hyperbola $ABIP$ cannot be composed analytically
+from the triangle $ABP$ and the quadrilateral $ABFP$, QED.
+
+However, so that the purpose may be made evident, I subject it to another more
+brief and easier proof stemming from another means of attack. A magnitude cannot
+be composed analytically from the terms $a^{3}+a^{2}b$ and $a^{2}b+b^{3}$ by the
+same method as the same magnitude is composed from the terms $ba^{2}+b^{2}a$ and
+$2b^{2}a$ because by adding, subtracting, multiplying, and dividing
+$a^{3}+a^{2}b$ and $a^{2}b+b^{3}$, and by extracting roots, 
+
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+
+It will be seen as most obscure\ldots
+\end{samepage}
+
+\begin{center}
+\large\textsc{Proposition XII. Theorem.}
+\end{center}
+
+\begin{figure}[h]
+\includegraphics[scale=0.95]{vera_i}
+\end{figure}
+
+\vskip 1.0em
+Let the quadrilateral $ABIP$ be $A$, the polygon $ABEIOP$ be $C$, the polygon $ABCGKNP$
+be $D$, and the polygon $ABDLP$ be $B$. I claim that $D$ is the harmonic mean of
+$C$ and $B$. Combining proposition 4 and $A:C::C:B$ gives $A+C:C::C+B:B$. But
+then from proposition 5 $A+C:C::2C:D$ and also $C+B:B::2C:D$. Permuting gives
+$B+C:2C::B:D$ and by dividing, the difference between $B$ and $C$ is to $2C$ as
+the difference between $B$ and $D$ is to $D$. Again by permuting, the difference
+between $B$ and $C$ is to the difference between $B$ and $D$ as $2C$ is to $D$,
+that is, as $C+B$ is to $B$. And by dividing, the difference between $D$ and $C$
+is to the difference between $B$ and $D$ as $C$ is to $B$. Therefore $D$ is the
+harmonic mean between $C$ and $B$, Q.E.D.
+
+This proposition is valid by the same method for every complex polygon, so that
+it follows from the Scholium of Proposition 5.
+
+\begin{center}
+\large\textsc{Proposition XIII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let C be the arithmetic mean, D the geometric mean, and E the harmonic
+mean of the two magnitudes $A$ and $B$. I claim that $C$, $D$, and $E$ are
+continuously proportional\footnote{That is, $C:D::D:E$.}. Because $A$, $E$, and
+$B$ are in harmonic ratio, the difference between $A$ and $E$ shall be to the difference between $E$ and $B$ as
+$A$ is to $B$. By combining, the difference between $A$ and $B$ shall be to the
+difference between $E$ and $B$ as $A+B$ is to $B$. From here, by permuting and
+combining, $2A:A+B::E:B$, but $2A$ is twice $A$ and $A+B$ is twice $C$, so that
+$A:C::E:B$. Thus $CE=AB$ and $AB=DD$, and so $CE=DD$. Therefore $C:D::D:E$,
+Q.E.D.
+
+\begin{figure}[h]
+\includegraphics[scale=0.95]{vera_inscr}
+\caption*{Series of inscribed polygons.}
+\end{figure}
+
+\begin{center}
+\large\textsc{Proposition XIV. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $A$ and $B$ be two complex polygons with $A$ inscribed in the sector of a
+circle or ellipse and $B$ circumscribed. A convergent series of these complex
+polygons may be continued according to our method of drawing the subdouble, so
+that the polygons inscribed in the circle are $A$, $C$, $E$, etc. and those
+circumscribed are $B$, $D$, $F$, etc. I claim that $A+E$ is less than $2C$.
+This is clear from the previous propositions by the following analogies.
+First, $A$, $C$, and $B$ are continuously proportional, and second $C$, $D$, and
+$B$ are in harmonic proportion. Therefore the excess of $C$ over $A$,
+that is $C-A$, is to the excess of $D$ over $C$, or $D-C$, in a ratio
+composed from the proportion $A:C$ and from the proportion $A+C:A$, that is in
+the ratio $A+C:C$. And $A+C$ is greater than $C$, so that the excess of
+$C$ over $A$ is greater than the excess of $D$ over $C$.
+However $D$ is greater than $E$ and so the excess of $C$ over $A$ is
+much greater than the excess of $E$ over $C$. Therefore $A+E$ is less
+than $2C$, Q.E.D.
+
+\begin{figure}[h]
+\includegraphics[scale=0.95]{vera_circumscr}
+\caption*{Series of circumscribed polygons.}
+\end{figure}
+
+\begin{center}
+\large\textsc{Proposition XV. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions, I claim that the excess of $C$ over $A$ is
+less than the quadruple of the excess of $E$ over $C$. This is
+clear from the previous propositions by analogy with the following three
+analogies. First, $A$, $C$, and $B$ are continuously proportional, second $C$, $D$, and
+$B$ are in harmonic proportion, and third $C$, $E$, and $D$ are continuously
+proportional. And so the excess of $C$ over $A$, that is $C-A$, is to
+the excess of $E$ over $C$, or $E-C$, as $AC+EC+AE+CC$ is to $CC$,
+and $B$ is greater than $E$. So $AB$, or $CC$, is greater than $AE$, and thus
+$AE+CC$ is less than $2CC$. And so $AC+EC$ is to $2CC$ as $A+E$ is to $2C$, but
+$A+E$ is less than $2C$ so that $AC+EC$ is less than $2CC$. Thus $AC+EC+AE+CC$
+is less than $4CC$. Therefore $C-A$ is less than the quadruple of $E-C$, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XVI. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $A$ and $B$ be two complex polygons with $A$ circumscribed about the sector
+of a hyperbola and $B$ inscribed. A convergent series of these complex polygons
+may be continued according to our method of drawing the subdouble, so that the
+polygons circumscribed about the hyperbola are $A$, $C$, $E$, etc. and those
+inscribed are $B$, $D$, $F$, etc. I claim that $A+E$ is greater than $2C$. This
+is clear from the previous propositions by the following analogies. First, $A$,
+$C$, and $B$ are continuously proportional, and second $C$, $D$, and $B$ are in
+harmonic proportion. Therefore the excess of $A$ over $C$, that is
+$A-C$, is to the excess of $C$ over $D$, or $C-D$, in a ratio
+composed from the proportion $A:C$ and from the proportion $A+C:A$, that is in
+the ratio $A+C:C$. And $A+C$ is greater than $C$, so that the excess of
+$A$ over $C$ is greater than the excess of $C$ over $D$. However
+$E$ is greater than $D$ and so the excess of $A$ over $C$ is much
+greater than the excess of $C$ over $E$. Therefore $A+E$ is greater
+than $2C$, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XVII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions, I claim that the excess of $A$ over $C$ is
+greater than the quadruple of the excess of $C$ over $E$. This is
+clear from the previous propositions by analogy with the following three
+analogies. First, $A$, $C$, and $B$ are continuously proportional, second $C$, $D$, and
+$B$ are in harmonic proportion, and third $C$, $E$, and $D$ are continuously
+proportional. And so the excess of $A$ over $C$, that is $A-C$, is to
+the excess of $C$ over $E$, or $C-E$, in a ratio composed of the
+proportions $A:C$, $A+C:A$, and $E+C:C$. And so $A-C$ is to $C-E$ as
+$AC+EC+AE+CC$ is to $CC$, and $B$ is less than $E$. So $AB$, or $CC$, is less
+than $AE$, and thus $AE+CC$ is greater than $2CC$. And so $AC+EC$ is to $2CC$ as
+$A+E$ is to $2C$, but $A+E$ is greater than $2C$ so that $AC+EC$ is greater than
+$2CC$. Thus $AC+EC+AE+CC$ is greater than $4CC$. Therefore $C-A$ is greater than
+the quadruple of $E-C$, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XVIII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $A$ and $B$ be two magnitudes such that $A$ is less than $B$. Let $C$ be
+their geometric mean and $D$ their arithmetic mean. I claim that $D$ is greater
+than $C$. Since $B$, $C$, and $A$ are continuously proportional, by dividing,
+permuting, and combining, it shall be that the excess of $B$ over $A$
+is to the excess of $C$ over $A$ as $A+C$ is to $A$. And so $A+C$ is
+greater than twice $A$. Thus the excess of $B$ over $A$ is greater
+than twice the excess of $D$ over $A$, so that the excess of
+$D$ over $A$ is greater than the excess of $C$ over $A$.
+Therefore $D$ is greater than $C$, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XIX. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions, let $E$ be the harmonic mean of $A$ and $B$. I claim
+that $C$ is greater than $E$. From proposition 13, $D$ is to $C$ as $C$ is to
+$E$, but $D$ is greater than $C$. Therefore $C$ is greater than $E$, Q.E.D.
+
+\begin{center}
+\large\textsc{Conclusion.}
+\end{center}
+
+\vskip 1.0em
+From the two preceding propositions it is obvious that $D$ is greater than $E$,
+that is, that the arithmetic mean of two magnitudes is greater than the harmonic
+mean of the same.
+
+\begin{center}
+\large\textsc{Proposition XX. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $A$ and $B$ be two complex polygons with $A$ inscribed in the sector of a
+circle or ellipse and $B$ circumscribed. A convergent series of these complex
+polygons may be continued according to our method of drawing the subdouble, so
+that the polygons inscribed in the circle are $A$, $C$, $E$, $K$, etc. and those
+circumscribed are $B$, $D$, $F$, $L$, etc. Also let $Z$ be the limit of the
+convergent series, that is, the sector of the circle or ellipse. I claim that
+$Z$ is greater than $C$ plus one third of the excess of $C$ over $A$.
+Let the excess of $G$ over $C$ be a fourth part of the excess of
+$C$ over $A$ and the excess of $H$ over $G$ be a fourth part of
+the excess of $G$ over $C$. This series may be continued
+infinitely, so let $X$ be the limit of this process. The excess of $C$
+over $A$ is less than the quadruple of the excess of $E$ over
+$C$, and so the excess of $E$ over $C$ is greater than the excess
+of $G$ over $C$, and therefore $E$ is greater than $G$. Now the
+excess of $E$ over $C$ is less than the quadruple of the excess of $K$
+over $E$, and so the excess of $G$ over $C$ is much less than the excess of $K$
+over $E$, and therefore the excess of $K$ over $E$ is greater than the excess of $H$ over $G$.
+Since $E$ is greater than $G$, it is obvious $K$ is greater than $H$. It is
+demonstrated by the same method in every series $A$, $C$, $E$ and $A$, $C$, $G$,
+by continuation to however many terms. Each term of the series $A$, $C$, $E$
+is greater than the corresponding term of the series $A$, $C$, $G$. And so the
+limit of the series $A$, $C$, $E$, that is $Z$, will be greater than the limit
+of the series $A$, $C$, $G$, that is $X$. And from Archimedes the quadrature of
+the parabola fixed as $X$ is equal to $C$ plus one third of the excess of $C$
+over $A$, and therefore $Z$ is greater than it, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XXI. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions as above, I claim that $Z$, which is a sector of a
+circle or ellipse, is less than the greater of the two continuously
+proportional arithmetic means of $A$ and $B$. Let $G$ be the arithmetic mean
+of $A$ and $B$ and $H$ be the arithmetic mean between $G$ and $B$. Likewise let $M$
+be the arithmetic mean of $G$ and $H$ and $N$ be the arithmetic mean of $M$ and
+$H$. This convergent series, with terms $AB$, $GH$, $MN$,
+$OP$, may be continued infinitely, so that its limit is $X$. It is clear
+from the preceding propositions that $G$ is greater than $C$, and $H$, the
+arithmetic mean of $G$ and $B$, is greater than the harmonic mean of $G$ and
+$B$. However the harmonic mean of $G$ and $B$ is greater than $D$, the harmonic
+mean of $C$ and $B$, since $G$ is greater than $C$. And so the arithmetic mean
+of $G$ and $B$, that is $H$, is greater than $D$, the harmonic mean of $C$ and
+$B$. By the same method $M$, the arithmetic mean of $G$ and $H$ is greater than
+the geometric mean between $G$ and $H$. And since $G$ is greater than $C$, and
+$H$ is greater than $D$, the geometric mean of $G$ and $H$ is greater than $E$,
+the geometric mean of $C$ and $D$. Thus $M$ is greater than $E$. Now $N$, the
+arithmetic mean of $M$ and $H$, is greater than the harmonic mean of the same,
+and since $H$ is greater than $D$ and $M$ is greater than $E$, the harmonic mean
+of $M$ and $H$ is greater than $F$, the harmonic mean of $E$ and $D$. And so $N$
+is greater than $F$. Continuing the series by the same method to infinity, one
+may always show that the terms of the series $AB$, $CD$ are less
+than the corresponding terms of the series $AB$, $GH$. Therefore
+the limit, $Z$, of the series $AB$, $CD$ will be less than the
+limit, $X$, of the series $AB$, $GH$. Also, from Proposition 7, the limit, $X$,
+of the series $AB$, $GH$ is equal to the greater of the two
+continuously proportional arithmetic means of $A$ and $B$, and so $Z$ is the
+less than the same, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XXII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions as above, I claim that I claim that $Z$, which is a
+sector of a circle or ellipse, is less than the greater of the two continuously
+proportional geometric means of $A$ and $B$. Let $G$ be the geometric mean
+of $A$ and $B$ and $H$ be the geometric mean between $G$ and $B$. Likewise let
+$M$ be the geometric mean of $G$ and $H$ and $N$ be the geometric mean of $M$
+and $H$. This convergent series, with terms $AB$, $GH$, $MN$,
+$OP$, may be continued infinitely, so that its limit is $X$. It is clear
+from the preceding propositions that $C$ and $G$ are equals, and $H$ is greater
+than $D$. By this reasoning, $M$, the geometric mean of $G$ and $H$, is greater
+than $E$, the geometric mean of $C$ and $D$. Now $N$, the geometric mean of $M$
+and $H$, is greater than the harmonic mean of the same, and since $M$ is greater
+than $E$ and $H$ is greater than $D$, the harmonic mean of $M$ and $H$ is
+greater than $F$, the harmonic mean of $E$ and $D$. And so $N$ is greater than
+$F$. Continuing the series by the same method to infinity, one may always show
+that the terms of the series $AB$, $CD$ are less than the corresponding terms of
+the series $AB$, $GH$. Therefore the limit, $Z$, of the series $AB$, $CD$ will
+be less than the limit, $X$, of the series $AB$, $GH$. Also, from Proposition 9,
+the limit, $X$, of the series $AB$, $GH$ is equal to the greater of the two
+continuously proportional geometric means of $A$ and $B$, and so $Z$ is the
+less than the same, Q.E.D.
+
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+
+\vskip 1.0em
+It is not much work for me to show that the greater of the two continuously
+proportional arithmetic means of two unequal magnitudes is greater than the
+greater of the two continuously proportional geometric means of the same
+magnitudes. Therefore it is a more exact approximation of the previous
+proposition, if it be carried out. However I use the preceding proposition for
+its ease.
+
+\begin{center}
+\large\textsc{Proposition XXIII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $A$ and $B$ be two complex polygons with $A$ circumscribed in the sector of
+a hyperbola and $B$ inscribed. A convergent series of these complex
+polygons may be continued according to our method of drawing the subdouble, so
+that the polygons circumscribed in the circle are $A$, $C$, $E$, $K$, etc. and those
+inscribed are $B$, $D$, $F$, $L$, etc. Also let $Z$ be the limit of the
+convergent series, that is, the sector of the hyperbola. I claim that $Z$ is
+greater than $C$ subtracted from one third of the excess of $A$ over
+$C$. Let the excess of $C$ over $G$ be a fourth part of the excess of $A$ over
+$C$ and the excess of $G$ over $H$ be a fourth part of the excess of $C$ over
+$G$. This series may be continued infinitely, so let $X$ be the limit of this
+process. The excess of $A$ over $C$ is greater than the quadruple of the excess
+of $C$ over $E$, and so the excess of $C$ over $E$ is less than the excess of
+$C$ over $G$, and therefore $E$ is greater than $G$. Now the excess of $C$ over
+$E$ is greater than the quadruple of the excess of $E$ over $K$, and so the
+excess of $C$ over $G$ is much greater than the excess of $E$ over $K$, and
+therefore the excess of $G$ over $H$ is greater than the excess of $E$ over $K$.
+Since $E$ is greater than $G$, it is obvious $K$ is greater than $H$. It is
+demonstrated by the same method in every series $A$, $C$, $E$, $K$ and $A$, $C$,
+$G$, $H$ by continuation to however many terms. Each term of the series $A$,
+$C$, $E$ is greater than the corresponding term of the series $A$, $C$, $G$. And so the
+limit of the series $A$, $C$, $E$, that is $Z$, will be greater than the limit
+of the series $A$, $C$, $G$, that is $X$. And from Archimedes the quadrature of
+the parabola fixed as $X$ is equal to $C$ plus one third of the excess of $C$
+over $A$, and therefore $Z$ is greater than it, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XXIV. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions as above, I claim that $Z$, which is a sector of a
+hyperbola, is less than the lesser of the two continuously proportional
+arithmetic means of $A$ and $B$. Let $G$ be the arithmetic mean of $A$ and $B$
+and $H$ be the arithmetic mean between $G$ and $B$. Likewise let $M$ be the
+arithmetic mean of $G$ and $H$ and $N$ be the arithmetic mean of $M$ and $H$.
+This convergent series, with terms $AB$, $GH$, $MN$, $OP$, may be continued
+infinitely, so that its limit is $X$. It is clear from the preceding
+propositions that $G$ is greater than $C$, and $H$, the arithmetic mean of $G$
+and $B$, is greater than the harmonic mean of $G$ and $B$. However the harmonic
+mean of $G$ and $B$ is greater than $D$, the harmonic mean of $C$ and $B$, since
+$G$ is greater than $C$. And so the arithmetic mean of $G$ and $B$, that is $H$,
+is greater than $D$, the harmonic mean of $C$ and $B$. By the same method $M$,
+the arithmetic mean of $G$ and $H$ is greater than the geometric mean between
+$G$ and $H$. And since $G$ is greater than $C$, and $H$ is greater than $D$, the
+geometric mean of $G$ and $H$ is greater than $E$, the geometric mean of $C$ and
+$D$. Thus $M$ is greater than $E$. Now $N$, the arithmetic mean of $M$ and $H$,
+is greater than the harmonic mean of the same, and since $H$ is greater than $D$
+and $M$ is greater than $E$, the harmonic mean of $M$ and $H$ is greater than
+$F$, the harmonic mean of $E$ and $D$. And so $N$ is greater than $F$.
+Continuing the series by the same method to infinity, one may always show that
+the terms of the series $AB$, $CD$ are less than the corresponding terms of the
+series $AB$, $GH$. Therefore the limit, $Z$, of the series $AB$, $CD$ will be
+less than the limit, $X$, of the series $AB$, $GH$. Also, from Proposition 7,
+the limit, $X$, of the series $AB$, $GH$ is equal to the lesser of the two
+continuously proportional arithmetic means of $A$ and $B$, and so $Z$ is the
+less than the same, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XXV. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions as above, I claim that I claim that $Z$, which is a
+sector of a hyperbola, is less than the lesser of the two continuously
+proportional geometric means of $A$ and $B$. Let $G$ be the geometric mean
+of $A$ and $B$ and $H$ be the geometric mean between $G$ and $B$. Likewise let
+$M$ be the geometric mean of $G$ and $H$ and $N$ be the geometric mean of $M$
+and $H$. This convergent series, with terms $AB$, $GH$, $MN$,
+$OP$, may be continued infinitely, so that its limit is $X$. It is clear
+from the preceding propositions that $C$ and $G$ are equals, and $H$ is greater
+than $D$. By this reasoning, $M$, the geometric mean of $G$ and $H$, is greater
+than $E$, the geometric mean of $C$ and $D$. Now $N$, the geometric mean of $M$
+and $H$, is greater than the harmonic mean of the same, and since $M$ is greater
+than $E$ and $H$ is greater than $D$, the harmonic mean of $M$ and $H$ is
+greater than $F$, the harmonic mean of $E$ and $D$. And so $N$ is greater than
+$F$. Continuing the series by the same method to infinity, one may always show
+that the terms of the series $AB$, $CD$ are less than the corresponding terms of
+the series $AB$, $GH$. Therefore the limit, $Z$, of the series $AB$, $CD$ will
+be less than the limit, $X$, of the series $AB$, $GH$. Also, from Proposition 9,
+the limit, $X$, of the series $AB$, $GH$ is equal to the lesser of the two
+continuously proportional geometric means of $A$ and $B$, and so $Z$ is the
+less than the same, Q.E.D.
+
+It is clear from this claim that this approximation is that one demonstratred
+in the preceding proposition, if this one might be a little more laborious.
+One will not ignore, however, that the two series can have equal limits, and
+such that however many terms of one series would be always be greater than the
+corresponding terms of the other series. But in such series that are carried out
+a long way, the difference is less than it of the same number by means of the
+number of terms. But the counter of our series that are carried out a long
+way differs more greatly by the number of terms, as one can very easily show.
+
+I observe by experiment that the difference between the second of two
+proportional arithmetic means and the second of two proportional geometric means
+is always much greater than the difference between the second of two
+proportional geometric means and the sector of the circle, ellipse, or
+hyperbola. That noted I consider appropriate, indeed this sector is
+obtained differing scarcely beyond one from the second of the proportional
+arithmetic means, when the arithmetic mean does not exceed the the geometric
+mean beyond one, which exceedingly noted, for from this it is clear that the
+approximation is boldly employed, when the series is continued to that the
+midpoint of first of the noted is the same in either convergent term, which
+experience likewise have evinced. In fact the sector never in this case differs
+by unity from the second of the two continuously proportional arithmetic means.
+
+Similarly another approximation is altogether most brief and most astonishing,
+although it may not turn out to strengthen that geometric demonstration to me.
+Namely if the first third of the noted in whichever term be converging to the
+same, the sector of the circle, ellipse, or hyperbola always differs within
+unity from the greatest quarter by the arithmetic continous proportion the other
+of the terms of our approximation.
+
+\begin{center}
+\large\textsc{Proposition XXVI. Theorem.}
+\end{center}
+
+\vskip 1.0em
+Let $CFN$ be any hyperbola with center $A$ and asymptotes $AB$ and $AO$. Also,
+let $AFGL$ be its sector, with circumscribed triangle $AFL$. Let lines $FD$ and
+$LM$ be drawn parallel to the asymptote $AB$ and complete parallelograms $FDMK$
+and $PLMD$. I claim that the triangle $AFL$ is the arithmetic mean of
+parallelograms $FDMK$ and $PLMD$. Gregorie of St. Vincent shows in his Libra de
+Hyperbola that the triangle $AFL$ is equal to the quadrilateral $DFLM$, but it
+is obvious that quadrilateral $DFLM$ is the arithmetic mean of parallelograms
+$FDMK$ and $PLMD$, Q.E.D.
+
+\begin{figure}[h!]
+\includegraphics[scale=0.95]{vera_hyp_i}
+\end{figure}
+
+\begin{center}
+\large\textsc{Proposition XXVII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions, let line $AI$ be drawn bisecting $FL$ at $I$ and
+intersecting the hyperbola at the point $G$. Also let $AFGL$ be a circumscribed
+quadrilateral of the sector. I claim that this is the geometric mean of
+parallelograms $FDMK$ and $PLMD$. From the proof of Gregorie of St. Vincent it
+is evident that quadrilateral $AFGL$ is equal to $DFGLM$. Because $AGI$ bisects
+the line $FL$ at $I$, from the Libra de Hyperbola of Gregorie of St. Vincent it
+is clear that the lines $LM$, $GH$, and $FD$ are continually proportional in the
+same ratio with the three continuous proportionals $AD$, $AH$, and $AM$. Let
+the line $RGS$ be drawn through the point $G$ parallel to the asymptote $AO$,
+meeting the lines $FD$ and $MK$ at the points $R$ and $S$. Because the lines
+$FD$, $GH$, and $LM$ are continuously propotional, by dividing and permuting we
+obtain $FR$ is to $SL$ as $GH$ is to $LM$. Likewise, since the lines $MA$, $HA$,
+and $DA$ are continuously proportional, by dividing and permuting we
+obtain $MH$ is to $HD$, that is $SG$ is to $GR$, as $HA$ is to $DA$, or $GH$ is
+to $LM$. Thus $FR$ is to $SL$ as $SG$ it to $GR$, and when the angles $FRG$ and
+$GLS$ are equal, on account of parallels $FR$ and $SL$ being equal, the
+triangles $FRG$ and $GLS$ shall be equal. Therefore parallelogram $RDMS$ is
+equal to polygon $DFGLM$, or quadrilateral $AFGL$. However, parallelogram $RDMS$
+is the geometric mean of parallelograms $PDML$ and $FDMK$ since in having the
+same height and the bases $LM$, $SM$ and $KM$ are continuously proportional. And
+so the quadrilateral $AFGL$ is the geometric mean of parallelograms $PDML$ and
+$FDMK$, Q.E.D.
+
+\begin{center}
+\large\textsc{Proposition XXVIII. Theorem.}
+\end{center}
+
+\vskip 1.0em
+By the same assumptions, let the lines $FE$ and $LE$ be drawn tangent to the
+hyperbola at points $F$ and $L$ in order to complete the quadrilateral $AFEL$. I
+claim this is the harmonic mean of parallelograms $PDML$ and $FDMK$. Triangle
+$AFL$, quadrilateral $AFGL$, and the harmonic mean of parallelograms $PDML$ and
+$FDMK$ are continuously proportional since triangle $AFL$ is the arithmetic mean
+and quadrilateral $AFGL$ the geometric mean of these parallelograms, as is clear
+from Proposition 13. However triangle $AFL$, quadrilateral $AFGL$ and
+quadrilateral $AFEL$ are continuously proportional by Proposition 11. Therefore
+quadrilateral $AFEL$ is the harmonic mean of parallelograms $PDML$ and $FDMK$,
+Q.E.D.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXIX. Problem.}
+
+\vskip 1.0em
+\emph{To find a square equal to a given circle.}
+\end{center}
+\end{samepage}
+
+Let the square circumscribed by the circle be $4\cdot 10^{15}$, then the
+inscribed square is $2\cdot 10^{15}$, between which \seqsplit{2828427124746190}
+is the octagonal geometric mean. Now let the harmonic mean be between the
+octagon inside the circle and the square about it, which by trivial labor is
+found by dividing the double of the area of the octagonal inside the circle, or
+the double of the rectangle of the areas inside and about the circle, by the sum
+of the square and the octagon within. Then I find \seqsplit{3313708498984760} to
+be the harmonic mean, the circumscribed octagon. Continuing this converging
+series of the complex polygons where the midpoint of the first term is the same
+in whichever convergent term, it is easy to do so up to the polygon of 16384
+sides. Indeed the inscribed is \seqsplit{3141592576586860} and the circumscribed
+\seqsplit{3141592692091258}. This is not considered the final term, since in
+division and root extraction we always stray in some small part from the true
+value, which the last imperfect term renders closely. From this is employed the
+approximation from the proofs of Propositions 20 and 21, and the terms found
+within will determine the true measure of the circle, positing the square of the
+diamter as $4\cdot 10^{15}$, the smaller circle \seqsplit{3141592653589789}, and
+the larger \seqsplit{3141592653589792}. Therefore the measure of the circle may
+no longer hide, I deliver this series of polygons, which we wanted to find.
+
+\vskip 1.0em
+\begin{tabular}{ r p{129pt} p{129pt} }
+      & Inside the circle & About the circle \\
+4     & 2000000000000000 & 4000000000000000 \\
+8     & 2828427124746190 & 3313708498984760 \\
+16    & 3061467458920718 & 3182597878074527 \\
+32    & 3121445152258051 & 3151724907429255 \\
+64    & 3136548490545938 & 3144118385245904 \\
+128   & 3140331156954752 & 3142223629942456 \\
+256   & 3141277250932772 & 3141750369168965 \\
+512   & 3141513801144299 & 3141632080703181 \\
+1024  & 3141572940367090 & 3141602510256808 \\
+2048  & 3141587725277158 & 3141595117749588 \\
+4096  & 3141591421543029 & 3141593269613390 \\
+8192  & 3141592345578073 & 3141592807595664 \\
+16384 & 3141592576586860 & 3141592692091258
+\end{tabular}
+
+\vskip 1.0em
+The circle consists of the following terms
+\[3141592653589789 \qquad\qquad 3141592653589792\]
+and by the same method altogether is obtained the equivalent polygon to
+whichever circular or elliptic sector inscribed by a known triangle and
+circumscribed by a quadrilateral.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXX. Problem.}
+
+\vskip 1.0em
+\emph{To find an arc from a given sine.}
+\end{center}
+\end{samepage}
+
+Let $AE$ be the arc of the circle described about the center $B$. The radius of
+this arc is of course $AB$ and the sine is $AD$. We want to find which
+proportion of the arc itself has to the entire circumference of the circle. Let
+$AE$ be the chord of the arc and its half-tangents be $AC$ and $CE$. From the
+square of the radius $AB$ is produced the square of the sine $AD$, and square of
+the cosine $BD$ remains, and thus $BD$ is given. Therefore the area of the
+triangle $ABD$ is given by the rectangle and likewise the area of the triangle
+$ABE$ is given, namely the rectangle of the given sine $AD$ and half of the
+radius $BE$. From this it is seen that as the sum of the triangles $ABD$ and
+$ABE$ is to the triangle $ABE$ as the double of the triangle $ABE$ is to the
+quadrilateral $ABEC$, which is given by Proposition 5. From the given inscribed
+triangle $ABE$ and the circumscribed quadrilateral $ABEC$ the sector $ABE$
+itself may be found by the preceding Proposition, which to the given entire
+circle has the desired proportion of the arc $AE$ to the total circumference,
+which we wanted to find.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXXI. Problem.}
+
+\vskip 1.0em
+\emph{To find a sine from a given arc.}
+\end{center}
+\end{samepage}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.95]{vera_ii}
+\end{figure}
+
+From the given arc it is clear how to give the area of the sector. Therefore
+given the sector one may consider from how many arithmetic marks the entire
+sine is made. Now part of such a given sector having been supposed, that is the
+sector $ABE$, when inscribed triangle $ABE$ and circumscribed quadrilateral $ABEC$
+repeat however many times, as often as the given sector is a multiple of the 
+sector $ABE$ agreeing in every arithmetic mark as the square root of the whole
+sine contains. Indeed this can easily be shown from consideration of the table of
+Proposition 29. Precision is not required in this process, for if large radii are
+used then it makes no difference if the difference be off by a few parts. The
+radius $BA$ is given from the known sector $ABE$, by which the arc $AE$ is
+likewise known. Let its sine $AD$ be given by $z$. Thus from the given sine
+and radius, the inscribed triangle $ABE$ is given as in the previous Proposition,
+as well as the circumscribed quadrilateral $ABEC$. And so the sector itself is
+given, it is the second of the two continuously proportional arithmetic means of
+the inscribed triangle and the circumscribed quadrilateral. Thus is given the
+equation between the double of the quadrilateral $ABEC$ plus triangle $ABE$ 
+and the triple of the known sector $ABE$, from whose resolution the value of
+the unknown magnitude $z$ is obvious, which is sine $AD$. And by the given arc
+$AE$ and its sine likewise the sine of all of the repetitions of the arc $AE$
+is given from the common doctrine of the angle of a sector. Therefore the sine
+of the arc initially proposed cannot hide, when it be in a given multiple of
+the arc $AE$, which we wanted to find.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXXII. Problem.}
+
+\vskip 1.0em
+\emph{To find a square equal to the hyperbolic area bound by a hyperbolic
+curve, one asymptote, and two a lines parallel to the other asymptote, which
+space is equal to the hyperbolic sector having for its base the same curve.}
+\end{center}
+\end{samepage}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.95]{vera_hyp_ii}
+\end{figure}
+
+Let $DIL$ be a hyperbola with asymptotes $AO$ and $AK$ that meet at the right
+angle $OAK$. Consider the hyperbolic area $ILMK$ bounded by the hyperbolic
+curve $IL$, the asymptotic segment $KM$, and the two lines $AK$ and $LM$, which
+are parallel to the other asymptote $AO$. Choose the line $IK$ to be $10^{12}$,
+$LM$ to be $10^{13}$, and $AM$ to be $10^{12}$ so that the line $KM$ is
+$9\cdot 10^{12}$. We want to find the measure of the area $ILMK$. Let the lines
+$IK$ and $OL$ be extended and draw the line $IP$ in order to complete the
+rectangles $LNKM$ and $QIKM$. It is clear that rectangle $LNKM$ has area
+$9\cdot 10^{25}$ and $QIKM$ has area $9\cdot 10^{24}$, and that the area of
+quadrilateral $LIKM$ is the arithmetic mean of these rectangles, being
+$4.95\cdot 10^{25}$. The geometric mean between $LNKM$ and $QIKM$ is found to
+be \seqsplit{28460498941515413987990042} which is the regular circumscribed
+pentagon of the hyperbolic area $LIKM$. Now as the quadrilateral $LIKM$ is to this
+circumscribed pentagon, so the double of the pentagon is to the regular
+inscribed hexagon of the hyperbolic area $LIKM$, namely
+\seqsplit{20779754131836628160009835}. This gives the complex of the regular
+hexagon with the aforementioned pentagon, of which the two areas bring about the
+first terms of the convergent series. Between this is the geometric mean by
+which the double of the square is divided by the same geometric mean plus the greater
+term, or the circumscribed pentagon. And they give the geometric mean and bearing
+whatever proportion of the second convergent terms. Thus this convergent series
+of complex polygons may be continued, while the first midpoint of the terms is the
+same in both convergent terms, namely up to the twentieth term, where the
+circumscribed polygon is \seqsplit{2302585092993120329958961534173864} and the
+inscribed is \seqsplit{23025850929931203593181124}. From here the approximation
+used is that proved in Propositions 23 and 24, and the inscribed terms are
+discovered, describing the true hyperbolic area of $LIKM$, being bound below by
+\seqsplit{23025850929940456240178681} and the same area to be bound above by
+\seqsplit{23025850929940456240178704}. And so the area can no longer hide, which
+was to be shown. I thus deliver the entire series of polygons plus the number of
+lines subtending the hyperbolic curve in whichever circumscribed polygon.
+
+\begin{landscape}
+\begin{center}
+{\renewcommand{\arraystretch}{0.8}
+\begin{tabular}{ r p{190pt} p{180pt} }
+        & Circumscribed Area         & Inscribed Area \\
+2       & 28460498941515413987990042 & 20779754131836628160009835 \\
+4       & 24318761696971474416609403 & 22410399968461612921314879 \\
+8       & 23345088913234727934949897 & 22868197570682058351436953 \\
+16      & 23105412906351426185065096 & 22986193244865462241217428 \\
+32      & 23045725982658962868047234 & 23015921117139340153267671 \\
+64      & 23030818728479610745741910 & 23023367512879647736902891 \\
+128     & 23027092819292183214705676 & 23025230015404383009313933 \\
+256     & 23026161398510805910921810 & 23025695697539046352276636 \\
+512     & 23025928546847571901068394 & 23025812121604634087915779 \\
+1024    & 23025870334152518169052273 & 23025841227841783762272302 \\
+2048    & 23025855780992551911165543 & 23025848504414868310197241 \\
+4096    & 23025852142703422669729927 & 23025850323559001769499206 \\
+8192    & 23025851233131194254554390 & 23025850778345089029496888 \\
+16384   & 23025851005738140519209367 & 23025850892041614212944994 \\
+32768   & 23025850948889877295901163 & 23025850920465745719335070 \\
+65536   & 23025850934677811503232115 & 23025850927571778609090592 \\
+131072  & 23025850931124795055887228 & 23025850929348286832351848 \\
+262144  & 23025850930236540944102405 & 23025850929792413888218560 \\
+524288  & 23025850930014477416159412 & 23025850929903445652188450 \\
+1048576 & 23025850929958961534173864 & 23025850929931203593181124 \\
+\end{tabular}
+}
+\end{center}
+
+\vskip 0.5em
+\begin{center}
+The hyperbolic sector consists of the following terms 
+
+23025850929940456240178681 \qquad\qquad 23025850929940456240178704
+\end{center}
+\end{landscape}
+
+It is therefore possible without danger of error to assume the following number
+for the sector of the hyperbola, of which the multiples of the number up to ten,
+facilitating division thanks to the composition of the logarithm, I reveal this.
+For in fact in long division it is better to use repeated subtraction for
+repetition of division than ordinary division, as agrees the expert of
+arithmetic.
+
+It is clear that this problem can be resolved by the same method even if the
+asymptotes $AO$ and $AK$ are not at a right angle. However we assumed
+so that the problem would be made easier and more readily used in the doctrine
+of logarithms, which was first discovered by our most noble Napier, and which we
+have now elevated (unless I am mistaken) to the highest peak of perfection.
+
+\begin{center}
+\begin{tabular}{ r c }
+1  & 23025850929940456240178700 \\
+2  & 46051701859880912480357400 \\
+3  & 69077552789821368720536100 \\
+4  & 92103403719761824960714800 \\
+5  & 115129254649702281200893500 \\
+6  & 138155105579642737441072200 \\
+7  & 161180956509583193681250900 \\
+8  & 184206807439523649921429600 \\
+9  & 207232658369454106161608300 \\
+10 & 230258509299404562401787000 \\ [1.0em]
+\end{tabular}
+\end{center}
+
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXXIII. Problem.}
+
+\vskip 1.0em
+\emph{To find the logarithm of any given number.}
+\end{center}
+\end{samepage}
+
+\vskip 1.0em
+By the same assumptions as in the preceding proposition, it is clear that,
+taking $IK$ to be unity, $ML$ is ten. Therefore, $IK$ being unity, let $GH$ be
+any parallel to the asymptote $AO$, the logarithm is desiered of this proposed
+number. It is clear from the given line $GH$ to get $KF$, and from the preceding
+to get likewise the hyperbolic area $GIKH$, which hyperbolic area I claim is
+the logarithm of the proposed number $GH$. I take by the area $LIKM$ the
+logarithm of the number ten. Indeed (from Gregorie of St. Vincent) the area
+$GHKI$ is in the same ratio to the area $LMKI$, in which ratio $GH$ to $IK$ is
+a multiple of the ratio $LM$ to $IK$. However the ratio $GH$ to $IK$ is a
+multiple of the ratio $LM$ to $IK$ in the same ratio as the number $GH$ is a
+multiple of the number $LM$, since it is contained itself in both ratios. Thus
+the area $GIKH$ is in the same ratio to the area $LIKM$, in which the number
+$GH$ is a multiple of the number $LM$, and so (since by hypothesis the area
+$LIKM$ is the logarithm of the number $LM$, or ten) the area $GIKH$ shall be
+the logarithm of the proposed number $GH$, since this is the essential property
+of logarithms, as they be among themselves in the same direct ratio, in which
+they are one another multiplied by the same number. And the logarithm of ten is
+generally given as a one with some arbitrary number of zeros. If this be done,
+the area $LIKM$ is to the area $GIKH$ as the arbitrary logarith of ten is to
+the other number. That number shall be found to be the logarithm of the proposed
+number $GH$, which we wanted to find.
+
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+
+\vskip 1.0em
+The exercise of the preceding problem set is long and laborious. Thus in order
+to abbreviate our labor when composing tables of logarithms, it has been
+understood that we merely need to work on the discovery of logarithms of prime
+numbers. Indeed the logarithms of composite numbers are found without effort
+from the primes by addition and subtraction. However as the logarithms of prime
+numbers may be easily found, the order progressing from the priors to the
+latters, so that from the arbitrary logarithm of 10 to each prime number 2, and
+from 10 and 2 to 3, likewise from 10, 2, and 3 to 7, likewise from 10, 2, 3, and
+7 to 11, and thus hereafter. Next two composite numbers differing by very little
+are found, of which one is composed from a number having a known logarithm, and
+so having the given logarithm, the other number is composed from only a prime
+number (of which the logarithm is found) or from that plus another number having
+known logarithm. Now these composite numbers are drawn (which may be, e.g., $GH$
+and $EF$) to the hyperbola as parallels to the asymptote $OA$, and the
+hyperbolic area $EGHF$ is found according to Proposition 32, which is done
+quickly from $GH$ and $EF$, which differ by very little. By assumption, the
+logarithm of one of the numbers, e.g. $GH$, is given, and so the ratio of its
+logarithm to the arbitrary logarithm of ten is given, which is the same (from
+the proofs to this point) as the ratio of the hyperbolic area $GIKH$ to the
+hyperbolic area $LIKM$. However the area LIKM is given by Proposition 32, and
+so the area $IKHG$ is known, and with the given area $EGHF$ $EIKF$ is given.
+Thus the logarithm of the composite number $EF$ is given. And when by assumption
+the logarithms of every number composing the number $EF$ may be given, except
+that prime number of which the logarithm is desired, that logarithm of the prime
+number will be given, which we wanted to find. For example, Let it be proposed
+to find the logarithm of the number two, supposing arbitrarily the logarithm of
+the number ten, but given as one with 25 zeros, the two composite numbers,
+differing by very little, are 1000 and 1024. The logarithm of the number 1000,
+or the triple of the area found above as \seqsplit{23025850929940456240178700},
+namely that area given by the arbitrary logarithm of the number ten.
+
+\begin{landscape}
+\begin{center}
+{\renewcommand{\arraystretch}{0.8}
+\begin{tabular}{ r p{190pt} p{180pt} }
+        & Circumscribed Area         & Inscribed Area \\
+2       & 237170824512628449899917 & 237162487062045867846886 \\
+4       & 237166655750699903737556 & 237164571388o54419219371 \\
+8       & 237165613567087322970403 & 237165092476425954356426 \\
+16      & 237165353021613523599438 & 237165222748948181485250 \\
+32      & 237165287885271907848389 & 237165255317105572320456 \\
+64      & 237165271601188181041012 & 237165263459146597159038 \\
+\end{tabular}
+}
+\end{center}
+
+\vskip 0.5em
+\begin{center}
+The hyperbolic sector consists of the following terms 
+
+237165266173160272103220 \qquad\qquad 237165266173160458453029
+\end{center}
+
+\vskip 0.5em
+Let be between these terms the four greatest of the continuously arithmetic
+proportionals \seqsplit{237165266173160421183067}, which hence shall be the true
+sector of the hyperbola in the proposed number of the noted, since the first
+third of the noted is the same in both of the convergent terms.
+\end{landscape}
+
+\noindent The logarithm of the number 1024 is unknown, indeed is composed from
+only the prime number 2, namely it is multiplied by ten. These composite numbers
+are drawn to the hyperbola, as has been said, letting $GH$ be 1000 and $EF$ be
+1024. But since $IK$ is \seqsplit{1000000000000}, $GH$ shall be
+\seqsplit{1000000000000000} and $EF$ \seqsplit{1024000000000000}, and by
+Proposition 32 the area $EGHF$ is found to be
+\seqsplit{237165266173160421183067} (I give this convergent series for the
+profit of the reader), or the logarithm of the number $1\frac{24}{1000}$ by the
+proposed arbitrary logarithm of ten \seqsplit{23025850929940456240178700}. Next,
+by the same assumed arbitrary logarithm of ten, the logarithm of the number 1000
+is added, or the triple of the logarithm of ten, to the logarithm of the number
+$1\frac{24}{1000}$, and will give the logarithm of the sum of the number 1024,
+of which a tenth part will be the logarithm of the number two through the same
+arbitrary logarithm of ten, or \seqsplit{6931471805599452914171917}. So it will
+be that the logarithm of the number ten \seqsplit{23025850929940456240178700} is
+to the logarithm of the number two corresponding to
+\seqsplit{6931471805599452914171917} as the proposed arbitrary logarithm of the
+number ten, or \seqsplit{10000000000000000000000000} is to the logarithm of the
+sought number two \seqsplit{3010299956639811952405804}, which we wanted to
+find\footnote{That is, $\log_10 \left(2\right) = \frac{\log \left(2\right)}{\log
+\left(10\right)}$}.
+By the same method the logarithm of three is found to be
+\seqsplit{4771212547196624373502993}, etc.
+
+In order to show these composite numbers, differing very little among
+themselves, through one of the prime numbers, I present this table for each
+prime number up to 100, as well as one rule for prime numbers between 100 and
+1000 and another for prime numbers above 1000, which have all been contrived so
+that the true logarithm of any prime number can be found by the corresponding
+arbitrary logarithm of ten \seqsplit{10000000000000000000000000} by only one
+multiplication, two divisions, and one square root extraction, as well as some
+little effort.
+
+\begin{longtable}{ c l }
+\multirow{2}[2]{*}{\Huge 2}  & $1000 = 10^{3}$ \\
+                          & $1024 = 2^{10}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 3}  & $32805 = 5\cdot 6561 = 5\cdot 3^{8}$ \\
+                          & $32768 = 2^{15}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 7}  & $2400 = 3\cdot 32 = 3\cdot 2^{5}$ \\
+                          & $2401 = 7^{4}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 11} & $9800 = 2\cdot 49\cdot 100 = 2\cdot 7^{2}\cdot 10^{2}$ \\
+                          & $9801 = 121\cdot 81 = 11^{2}\cdot 3^{4}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 13} & $123200 = 7\cdot 11\cdot 25\cdot 64 = 7\cdot 11\cdot 5^{2}\cdot 2^{6}$ \\
+                          & $123201 = 169\cdot 729 = 13^{2}\cdot 3^{6}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 17} & $2600 = 13\cdot 8\cdot 25 = 13\cdot 2^{3}\cdot 5^{2}$ \\
+                          & $2601 = 9\cdot 289 = 3^{2}\cdot 17^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 19} & $28899 = 169\cdot 9\cdot 19 = 13^{2}\cdot 3^{2}\cdot 19$ \\
+                          & $28900 = 100\cdot 289 = 10^{2}\cdot 17^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 23} & $25920 = 10\cdot 32\cdot 81 = 10\cdot 2^{5}\cdot 3^{2}$ \\
+                          & $25921 = 49\cdot 529 = 7^{2}\cdot 23^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 29} & $613088 = 17\cdot 23\cdot 32\cdot 49 = 17\cdot 23\cdot 2^{5}\cdot 7^{2}$ \\
+                          & $613089 = 729\cdot 841 = 3^{6}\cdot 29^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 31} & $116280 = 10\cdot 17\cdot 19\cdot 4\cdot 9 = 10\cdot 17\cdot 19\cdot 2^{2}\cdot 3^{2}$ \\
+                          & $116281 = 121\cdot 961 = 11^{2}\cdot 31^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 37} & $165648 = 3\cdot 7\cdot 17\cdot 29\cdot 16 = 3\cdot 7\cdot 17\cdot 29\cdot 2^{4}$ \\
+                          & $165649 = 121\cdot 1369 = 11^{2}\cdot 37^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 41} & $1413720 = 7\cdot 10\cdot 11\cdot 17\cdot 4\cdot 27 = 7\cdot 10\cdot 11\cdot 17\cdot 2^{2}\cdot 3^{3}$ \\
+                          & $1413721 = 1681\cdot 841 = 41^{2}\cdot 29^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 43} & $978120 = 10\cdot 11\cdot 13\cdot 19\cdot 4\cdot 9 = 10\cdot 11\cdot 13\cdot 19\cdot 2^{2}\cdot 3^{2}$ \\
+                          & $978121 = 529\cdot 1849 = 23^{2}\cdot 43^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 53} & $664848 = 7\cdot 19\cdot 23\cdot 8\cdot 125 = 7\cdot 19\cdot 23\cdot 2^{3}\cdot 5^{3}$ \\
+                          & $664849 = 9\cdot 121\cdot 2809 = 3^{2}\cdot 11^{2}\cdot 53^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 57} & $5851560 = 3\cdot 5\cdot 13\cdot 31\cdot 121 = 3\cdot 5\cdot 13\cdot 31\cdot 11^{2}$ \\
+                          & $5851561 = 1681\cdot 3481 = 41^{2}\cdot 57^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 61} & $3575880 = 5\cdot 7\cdot 11\cdot 43\cdot 8\cdot 27\cdot = 5\cdot 7\cdot 11\cdot 43\cdot 2^{3}\cdot 3^{3}$ \\
+                          & $3575881 = 961\cdot 3721 = 31^{2}\cdot 61^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 67} & $1620528 = 3\cdot 13\cdot 16\cdot 49 = 3\cdot 13\cdot 2^{4}\cdot 7^{2}$ \\
+                          & $1620529 = 361\cdot 4489 = 19^{2}\cdot 67^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 71} & $2016399 = 3\cdot 11\cdot 29\cdot 43\cdot 49 = 3\cdot 11\cdot 29\cdot 43\cdot 7^{2}$ \\
+                          & $2016400 = 16\cdot 25\cdot 5041 = 2^{4}\cdot 5^{2}\cdot 71^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 73} & $5116644 = 4\cdot 9\cdot 169\cdot 841 = 2^{2}\cdot 3^{2}\cdot 13^{2}\cdot 29^{2}$ \\
+                          & $5116645 = 7\cdot 17\cdot 19\cdot 31\cdot 73$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 79} & $5997600 = 17\cdot 32\cdot 9\cdot 25\cdot 49 = 17\cdot 2^{5}\cdot 3^{2}\cdot 5^{2}\cdot 7^{2}$ \\
+                          & $5997601 = 961\cdot 6241 = 31^{2}\cdot 79^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 83} & $1164240 = 5\cdot 11\cdot 16\cdot 27\cdot 49 = 5\cdot 11\cdot 2^{4}\cdot 3^{3}\cdot 7^{2}$ \\
+                          & $1164241 = 169\cdot 6889 = 13^{2}\cdot 83^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 89} & $2859480 = 5\cdot 47\cdot 8\cdot 9\cdot 169\cdot = 5\cdot 47\cdot 2^{3}\cdot 3^{2}\cdot 13^{2}$ \\
+                          & $2859481 = 361\cdot 7921 = 19^{2}\cdot 89^{2}$ \\ [1.0em]
+\multirow{2}[2]{*}{\Huge 97} & $1138488 = 3\cdot 13\cdot 41\cdot 89\cdot 8 = 3\cdot 13\cdot 41\cdot 89\cdot 2^{3}$ \\
+                          & $1138489 = 121\cdot 9409 = 11^{2}\cdot 97^{2}$ \\ [1.0em]
+\end{longtable}
+
+For prime numbers between 100 and 1000 let this be the rule: before the prime
+number of which the logarithm is desired, the two numbers immediately preceding
+are assumed, and the number following immediately after it, which three numbers
+with that prime are four numbers following one after another in natural order
+among themselves. Next the first number is multiplied by the cube of the third
+and the fourth by the cube of the second, and it will be that their difference
+equals the sum of the prime and the fourth or of the second and the third, as
+can easily be shown. These numbers have at least six prime factors between them,
+and thus they differ very little among themselves. Also the logarithms of the
+four of these numbers (except the third) are known from the preceding method,
+and thus are suitable to our abbreviation. So much apparatus is not useful in
+numbers beyond 1000, since the rectangle of the numbers, among which the prime
+number is understood immediately of which the logarithm is desired, which is
+only less the square of the prime number by one. And so these have at least six
+prime factors among them, and the logarithms of the first and third are
+obtained. Therefore the infinitude are available to us.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXXIV. Problem.}
+
+\vskip 1.0em
+\emph{From a given logarithm to find its number.}
+\end{center}
+\end{samepage}
+
+\vskip 1.0em
+From the demonstration it is clear that this same problem be as if that was
+proposing. From the given hyperbolic area, and one line understood to be
+parallel to one of the asymptotes, to find another area and its parallel to
+the asymptote. It may be considered from however many arithmetic terms the
+arbitrary logarithm of ten is comprised, and some part of the logarithm, or
+the given area, is assumed, namely the area $LIKM$, so that the regular
+circumscribed polygons of the area $LIKM$ and the regular inscribed hexagons of
+the same be repeated however many times, as often as is repeated the given area
+to the area $LIKM$, agreeing in all arithmetic terms, as many the square root
+of the arbitrary logarithm of ten contains. Indeed this can be done easily from
+the table of Proposition 32. Therefore the measure of the area $LIKM$ is
+obtained and the line $IK$ is unity by assumption. Let $LM$ be $z$. As in
+Proposition 32 the regular circumscribed pentagon and the regular inscribed
+hexagon give the area $LIKM$, between which the given area $LIKM$ is the
+second of the two continuously proportional arithmetic means. And so the double
+of the hexagon plus the pentagon is equal to the triple of the area, of which
+equation the unknown $z$, or the number $LM$, clearly resolves, of which
+repeated however many times, as many as the area $LIKM$ is submultiplied to the
+space, or the given logarithm, is the desired number, which we wanted to find.
+
+This is the same problem as Proposition 8, but more general and the method of
+this solution is far less work.
+
+\begin{samepage}
+\begin{center}
+\large\textsc{Proposition XXXV. Problem.}
+
+\vskip 1.0em
+\emph{A line having been drawn through a given point on a diamter, to divide
+the semicircle into a given ratio.}
+\end{center}
+\end{samepage}
+
+\begin{figure}[h]
+\includegraphics[scale=0.95]{vera_semicirc}
+\end{figure}
+
+\vskip 1.0em
+Let $ADG$ be a semicircle of given diameter $AG$, center $E$, and $B$ be a given
+point on the diameter. Assume it is done as desired, and let the line $BD$
+divide the semicircle into a given ratio. Since the measure of the semicircle is
+given and the ratio into which it is divided, so its portion, $DBG$, is given.
+Let $z$ be the line $BD$. From the given lines $BD$, $BE$, and $ED$, the
+triangles $DEB$, $DEF$, and $DEG$ are made known. Next let it be that as $DEF$
+plus $DEG$ is to $DEG$ so the double of $DEG$ is to the circumscribed
+quadrilateral $DEGH$. Setting $DEG$ and $DEGH$ as the first convergent term, the
+convergent series of complex ploygons may be continued, repeated as often as
+necessary according to the properties of the circle. Until the agreed upon
+approximation to employ such that the sector $DEG$ is shown, which plus the
+triangle $DBE$ is euqal to the known portion $DBG$, the equation of which
+clearly resolved the unknown magnitude $z$, or the line $BD$. The rest is
+obvious.
+
+The same problem is resolved by altogether the same method in the ellipse, the
+hyperbola, or any sector given.
+
+\begin{center}
+\large\textsc{Scholium.}
+\end{center}
+
+\vskip 1.0em
+If a problem set of the previous Propositions is desired for mechanical pratice,
+it will not be difficult to imitate the calculation, approximation, and 
+resolution of equations to some extent according to the common rules of the
+practice of Geometry. Many such problem sets may be resolved by the power of
+analysis and by our rules of convergent series, which before may have been
+impossible to estimate. However, it will be strongly said by anyone that these
+solutions are not geometric. I respond that if the only practice understood by
+the geometer is the power of the straightedge and compass, not only will this be
+impossible but likewise will every problem set which cannot be reduced to a
+quadratic equation, as may easily be shown. And if the reduction of the problem
+to an analytic equation be understood by the geometer, all of this problem set
+are impossible to the geometer, where by this proof it is clear that such a
+reduction is cannot be done. If in truth this most simple method of every
+possibility be understood by the geometer, it will be found most strongly after
+timely consideration that the entirety of the above problem set may be resolved
+most geometrically. Carefully observing the whole doctrine of convergent series
+it is possible likewise by little effort to apply it to simple series. Indeed
+let $A$, $B$, $C$, $D$, $E$, etc. be a series of such nature that the third term
+$C$ is composed by the same method from the first and second terms $A$ and $B$
+as the fourth term $D$ is composed from the second and third terms $B$ and $C$,
+and the fifth $E$ from the third and fourth $C$ and $D$, and so on infinitely.
+Let also the difference of the aforementioned $A$ and$B$ be always greater than
+the difference of the subsequent terms $B$ and $C$. We may assume this series to
+continue infinitely until two of the adjacent terms are not different, and
+letting one of these terms be $z$, which we call the limit of the series. I
+claim that $z$ is composed by the same method from $A$ and $B$ as from $B$ and
+$C$ or $C$ and $D$. The proof scarcely differes from that of Proposition 10 and
+its Conclusions. If this ratio is put to a triangle, inscribed in a sector of a
+circle or ellipse or circumscribed to a sector of a hyperbola, $a$, and a
+quadrilateral, regularly inscribed in a circle or ellipse or circumscribed to a
+hyperbola, $b$, then the hexagon regularly inscribed in a sector of a circle or
+ellipse or circumscribed to a hyperbola will be $\sqrt{\frac{2b^{3}}{a+b}}$.
+Thus the sector of a circle, ellipse, or hyperbola is composed of the same method
+from $a$ and $b$ as from $b$ and $\sqrt{\frac{2b^{3}}{a+b}}$. And so this
+likewise can be shown, that the ratio of the sector to its given triangle may not be
+analytic, according to Proposition 11. It would actually be possible to yet
+prove by another particular method that the circular arc does not have an
+analytic ratio to its given chord, but I do not add more, meanwhile advising
+geometers to growth by science. I myself might have discovered in certain
+figures (which Descartes called the second type) three foci, or three points,
+from which lines drawn to any point of the curve the sum or difference is always
+the same. Whence it appears to me to be true as all curves of the first type
+have two foci whether real or imaginary, as all of the second type have three,
+all third four, and so on infinitely. This speculation is certainly most worthy
+of scrutiny, and indeed it may be an extraordinary property of the geometric
+figures, and of the most useful mechanical practice of all equations.
+
+\begin{center}
+\Huge FINIS.
+
+\vskip 0.5em
+Anno Dom: 1667.
+\end{center}
+
+\cleardoublepage
+\appendix
+\begin{center}
+\LARGE\textsc{Appendix.} \\
+\large\emph{A modern rendering of the propositions.}
+\end{center}
+
+\vskip 2.0em
+
+\begin{center}
+Proposition I:
+\end{center}
+Let the area of $BAPF=a$, the area of $BAP=b$, and the area of $BAPI = c$. Then
+$c = \frac{a + b}{2} = \textrm{AM} \left( a, b \right)$.
+
+\vskip 2.0em
+\begin{center}
+Proposition II:
+\end{center}
+Let the area of $AFBP = a$, the area of $ABIP = b$, and the area of $ABDLP = c$.
+Then $c = \frac{2ab}{a+b} = \frac{\textrm{GM} \left( a, b \right)}{\textrm{AM}
+\left( a, b \right)}$.
+
+\vskip 2.0em
+\begin{center}
+Proposition III:
+\end{center}
+Let the area of $ABIP = a$, the area of $BAP = b$, and the area of $ABDLP = c$.
+Then $c = \frac{2a^2}{a+b} = \frac{a^2}{\textrm{AM} \left( a, b \right)}$.
+
+\vskip 2.0em
+\begin{center}
+Proposition IV:
+\end{center}
+Let the area of $ABIP = a$, the area of $ABDLP = b$, and the area of $ABEIOP =
+c$. Then $c = \frac{a + b}{2} = \textrm{AM} \left( a, b \right)$.
+
+\vskip 2.0em
+\begin{center}
+Proposition V:
+\end{center}
+Let the area of $ABEIOP = a$, the area of $ABIP = b$, and the area of polygon
+$ABCGKNP = c$. Then $c = \frac{2a^2}{a+b} = \frac{a^2}{\textrm{AM} \left( a, b
+\right)}$.
+
+\vskip 2.0em
+\begin{center}
+Proposition VI:
+\end{center}
+Let the area $ABP = a$, the area of $ABFP = b$, the area of $ABIP = c$, and the
+area of $ABDLP = d$. Then $a - b \leq 2\left( c - d \right) = \frac{(a + b)^2}{a
++ 3b} = \frac{2\textrm{AM}^2 \left( a, b \right)}{\textrm{AM} \left( a, b
+\right) + b}$.
+
+\vskip 2.0em
+\begin{center}
+Proposition VII:
+\end{center}
+Let $a_{0} = a$ and $b_{0} = b$ where $a < b$ and 
+
+
+\bibliographystyle{plain}
+\bibliography{cite1}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
