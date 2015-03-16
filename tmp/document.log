@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.29)  4 MAR 2015 22:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.29)  8 MAR 2015 23:52
 entering extended mode
 **document.tex
 (C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.tex
@@ -1359,71 +1359,77 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip58
 \droptitle=\skip59
 )
+(C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count129
+)
+\c@pp@a@footnote=\count130
+
 (C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.aux)
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 59.
-LaTeX Font Info:    Try loading font information for OML+jkp on input line 59.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 64.
+LaTeX Font Info:    Try loading font information for OML+jkp on input line 64.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for OMS+jkp on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+jkp on input line 64.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 64.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 64.
 
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 64.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 64.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2013/09/01 v1.0 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Try loading font information for T1+jkp on input line 59.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Try loading font information for T1+jkp on input line 64.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\t1jkp.fd
 File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
 )
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
+\scratchcounter=\count131
 \scratchdimen=\dimen145
 \scratchbox=\box36
-\nofMPsegments=\count130
-\nofMParguments=\count131
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count132
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen146
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks29
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1432,30 +1438,30 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OT1+jkp on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+jkp on input line 85.
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
-LaTeX Font Info:    Try loading font information for U+jkpmia on input line 79.
+LaTeX Font Info:    Try loading font information for U+jkpmia on input line 85.
 
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsya on input line 79.
+LaTeX Font Info:    Try loading font information for U+jkpsya on input line 85.
 
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 79.
+LaTeX Font Info:    Try loading font information for U+jkpsyb on input line 85.
 
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ujkpsyb.fd
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 79.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 85.
 
 
 (C:\Users\Walter\AppData\Roaming\MiKTeX\2.9\tex\latex\kpfonts\ujkpsyc.fd
@@ -1474,39 +1480,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
+LaTeX Font Info:    Calculating math sizes for size <8.3> on input line 154.
+LaTeX Font Info:    Calculating math sizes for size <7.6> on input line 155.
+
 [5] [6] [1
 
 ]
-Overfull \hbox (0.45157pt too wide) in paragraph at lines 231--233
+Overfull \hbox (0.45157pt too wide) in paragraph at lines 238--240
 [][]\T1/jkp/m/n/10.95 When mag-ni-tudes can be com-posed an-a-lyt-i-cally of ma
 g-ni-tudes which
  []
 
 [2] [3] [4
 
-] <vera_i.pdf, id=39, 361.35pt x 301.08885pt>
+] <vera_i.pdf, id=38, 361.35pt x 301.08885pt>
 File: vera_i.pdf Graphic file (type pdf)
  <use vera_i.pdf>
-Package pdftex.def Info: vera_i.pdf used on input line 284.
+Package pdftex.def Info: vera_i.pdf used on input line 291.
 (pdftex.def)             Requested size: 343.28055pt x 286.03278pt.
 
 [5 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_i.pdf>] [6] [7]
-Overfull \hbox (1.04279pt too wide) in paragraph at lines 382--389
+Overfull \hbox (1.04279pt too wide) in paragraph at lines 389--396
 \T1/jkp/m/n/10.95 from the pre-vi-ous propo-si-tion one can gather eas-ily enou
 gh that the quadri-
  []
 
-[8] [9] [10]
-Overfull \hbox (2.05226pt too wide) in paragraph at lines 505--517
-\T1/jkp/m/n/10.95 fore con-tin-u-ing the halv-ing of the poly-gon, two com-plex
- poly-gons are found
- []
-
-[11]
+[8] [9] [10] [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-Overfull \hbox (0.33107pt too wide) in paragraph at lines 567--599
+Overfull \hbox (0.33107pt too wide) in paragraph at lines 574--606
 \T1/jkp/m/n/10.95 Thus the afore-men-tioned mag-ni-tude is com-posed by the sam
 e method from
  []
@@ -1519,122 +1522,132 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+[22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
 File: vera_i.pdf Graphic file (type pdf)
 
 <use vera_i.pdf>
-Package pdftex.def Info: vera_i.pdf used on input line 892.
+Package pdftex.def Info: vera_i.pdf used on input line 980.
 (pdftex.def)             Requested size: 343.28055pt x 286.03278pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21] [22] <vera_inscr.pdf, id=105, 361.35pt x 285.09009pt>
+ [24] <vera_inscr.pdf, id=111, 361.35pt x 285.09009pt>
 File: vera_inscr.pdf Graphic file (type pdf)
 
 <use vera_inscr.pdf>
-Package pdftex.def Info: vera_inscr.pdf used on input line 926.
-(pdftex.def)             Requested size: 343.28055pt x 270.83403pt.
- [23 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_inscr.pdf>] <vera_c
-ircumscr.pdf, id=114, 361.35pt x 285.09009pt>
-File: vera_circumscr.pdf Graphic file (type pdf)
-
-<use vera_circumscr.pdf>
-Package pdftex.def Info: vera_circumscr.pdf used on input line 952.
+Package pdftex.def Info: vera_inscr.pdf used on input line 1019.
 (pdftex.def)             Requested size: 343.28055pt x 270.83403pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_circumscr.pdf>]
-[26] [27] [28] [29] [30] [31] [32]
-Overfull \hbox (3.51974pt too wide) in paragraph at lines 1258--1264
-\T1/jkp/m/n/10.95 ton-ish-ing, al-though it may not turn out to strengthen that
- ge-o-met-ric demon-
- []
+[25] <vera_circumscr.pdf, id=116, 361.35pt x 285.09009pt>
+File: vera_circumscr.pdf Graphic file (type pdf)
 
-[33] <vera_hyp_i.pdf, id=153, 361.35pt x 376.08403pt>
+<use vera_circumscr.pdf>
+Package pdftex.def Info: vera_circumscr.pdf used on input line 1047.
+(pdftex.def)             Requested size: 343.28055pt x 270.83403pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_inscr.pdf>] [27 <C:/
+Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_circumscr.pdf>] [28]
+[29] [30] [31] [32] [33] [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+<vera_hyp_i.pdf, id=159, 361.35pt x 376.08403pt>
 File: vera_hyp_i.pdf Graphic file (type pdf)
  <use vera_hyp_i.pdf>
-Package pdftex.def Info: vera_hyp_i.pdf used on input line 1280.
+Package pdftex.def Info: vera_hyp_i.pdf used on input line 1440.
 (pdftex.def)             Requested size: 343.28055pt x 357.27779pt.
 
-[34 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_hyp_i.pdf>] [35]
-[36] [37] <vera_ii.pdf, id=173, 361.35pt x 284.77792pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36] [37 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_hyp_i.pdf>]
+[38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+[40] <vera_ii.pdf, id=182, 361.35pt x 284.77792pt>
 File: vera_ii.pdf Graphic file (type pdf)
  <use vera_ii.pdf>
-Package pdftex.def Info: vera_ii.pdf used on input line 1416.
+Package pdftex.def Info: vera_ii.pdf used on input line 1589.
 (pdftex.def)             Requested size: 343.28055pt x 270.53749pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38] <vera_hyp_ii.pdf, id=177, 336.87857pt x 433.62pt>
+[41] <vera_hyp_ii.pdf, id=186, 336.87857pt x 433.62pt>
 File: vera_hyp_ii.pdf Graphic file (type pdf)
  <use vera_hyp_ii.pdf>
-Package pdftex.def Info: vera_hyp_ii.pdf used on input line 1454.
+Package pdftex.def Info: vera_hyp_ii.pdf used on input line 1633.
 (pdftex.def)             Requested size: 320.0328pt x 411.93666pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_ii.pdf>] [40 <C:/Us
+ [42 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_ii.pdf>] [43 <C:/Us
 ers/Walter/Documents/GitHub/Vera-Circuli-EN/vera_hyp_ii.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
-[42] [43
+ [44]
+[45] [46
 
-] [44
+] [47
 
-] [45] [46] [47
+] [48] [49] [50
 
 ]
 Underfull \vbox (badness 1199) has occurred while \output is active []
 
- [48
+ [51
 
 ]
-[49] [50] [51] <vera_semicirc.pdf, id=231, 361.35pt x 183.55777pt>
+[52] [53] [54] <vera_semicirc.pdf, id=240, 361.35pt x 183.55777pt>
 File: vera_semicirc.pdf Graphic file (type pdf)
 
 <use vera_semicirc.pdf>
-Package pdftex.def Info: vera_semicirc.pdf used on input line 1795.
+Package pdftex.def Info: vera_semicirc.pdf used on input line 1989.
 (pdftex.def)             Requested size: 343.28055pt x 174.37888pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[52] [53 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_semicirc.pdf>]
+[55] [56 <C:/Users/Walter/Documents/GitHub/Vera-Circuli-EN/vera_semicirc.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-[55] [56
+ [57]
+(C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.bbl [58]) [59
 
-] [57] (C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.bbl
-[58]) [59
-
-] (C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.aux) ) 
+]
+(C:\Users\Walter\Documents\GitHub\Vera-Circuli-EN\document.aux) ) 
 Here is how much of TeX's memory you used:
- 8384 strings out of 493921
- 121901 string characters out of 3144873
- 170536 words of memory out of 3000000
- 11443 multiletter control sequences out of 15000+200000
- 130296 words of font info for 128 fonts, out of 3000000 for 9000
+ 8468 strings out of 493921
+ 123383 string characters out of 3144873
+ 176992 words of memory out of 3000000
+ 11527 multiletter control sequences out of 15000+200000
+ 132254 words of font info for 158 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 53i,8n,92p,817b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Users/Walter/AppData
-/Roaming/MiKTeX/2.9/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Users/Walter
-/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/Wa
-lter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/
-Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmi.pfb><C:/User
-s/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:
-/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmite.pfb
-><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmn8a
-.pfb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkp
-mne.pfb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/
-jkpmsc8a.pfb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpf
-onts/jkpsy.pfb>
-Output written on document.pdf (65 pages, 4394395 bytes).
+ 53i,10n,92p,817b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Users/Walter/AppData/R
+oaming/MiKTeX/2.9/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Users/Walter/A
+ppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpbn8a.pfb><C:/Users/Walt
+er/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpex.pfb><C:/Users/Wa
+lter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/
+Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/U
+sers/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmite.pfb><
+C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmn8a.p
+fb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jkpmn
+e.pfb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfonts/jk
+pmsc8a.pfb><C:/Users/Walter/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/kpfon
+ts/jkpsy.pfb>
+Output written on document.pdf (65 pages, 4397134 bytes).
 PDF statistics:
  297 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
